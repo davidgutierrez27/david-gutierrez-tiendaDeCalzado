@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+.header{
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+        .logo-principal{
+        top: 17px;
+	    left: 123px;
+	    width: 247px;
+        margin-left: 100px;
+        margin-right: 400px;
+        }
+    .lista-nav{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: right;
+        width: 100%;
+        height: 134.2px;
+        overflow: hidden;
+        line-height: 129.2px;
+        .lista-item{
+            margin-left: 60px;
+            font-size: 32px;
+            .link-nav{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+.main-index{
+    .section-principal{
+        padding-left: 100px;
+        padding-top: 100px;
+        color: white;
+        background-image: url(../assets/img/header.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        }
+        .titulo-principal{
+            font-family: "Baloo", sans-serif;
+            font-size: 4rem;
+            font-weight: 600;
+            margin-top: 140px;
+        }
+        .grosor-menor{
+            font-size: 2rem;
+            font-weight: 150;
+        }
+        .section-principal-p{
+            width: 500px;
+            margin-bottom: 40px;
+            font-size: 1.5rem;
+            font-weight: 100;
+            font-family: "Roboto",sans-serif;
+        }
+        .link-encontranos{
+            background-color: rgba(255, 255, 255, 0);
+            display: content-box;
+            width: 200px;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 50px;
+            font-size: 1.6rem;
+            font-weight: 100;
+            border-radius: .625rem;
+        }
+        .section-catalogo {
+            position: relative;
+            left: 0px;
+            width: 1903px;
+            height: 245px;
+          
+            .section-catalogoSub {
+              position: absolute;
+              top: 50%; /* Ajusta según sea necesario para centrarlo verticalmente */
+              left: 10px; /* Ajusta según sea necesario para el margen izquierdo */
+              transform: translateY(-50%); /* Centra verticalmente usando posición absoluta */
+              color: rgb(255, 255, 255);
+              font-size: 46px;
+              font-family: "Oswald", sans-serif;
+              font-weight: 200;
+              z-index: 2; /* Coloca el .section-catalogoSub encima de .section-catalogoImg */
+            }
+          
+            .section-catalogoImg {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              z-index: 1; /* Coloca .section-catalogoImg detrás de .section-catalogoSub */
+            }
+          }
+    .section-tarjetasProductos{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+        
+        
+    
+        .nuestos-productos{
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px 0px;
+        }
+        .tarjetasProductosDiv{
+            
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 60px;
+    
+            .tarjetasProductos{
+                width: 168px;
+                height: 350px;
+                background-color: rgba(233, 233, 233, 0);
+                padding-bottom: 10px;
+                padding-top: 40px;
+                .tarjetasProductos-subtitulo{
+                    font-size: 14px;
+                    padding-top: 10px;
+                }
+                .tarjetasProductos-img{
+                    width: 100%;
+                    height: 90%;
+                    width: 168px;
+                    height: 222px;
+                    border-radius: 2rem;
+                    object-fit: contain;
+                    border: 3px;
+                    border-color: blue;
+                }   
+            }
+        
+        }
+    
+        
+    }
+    .para-ellosyellas{
+        width: 100%;
+        display: flex;
+        margin-top: 150px;
+        padding-left: 70px;
+        margin-bottom: 150px;
+        align-items: end;
+        justify-content: center;
+        gap:100px;
+        .tarjeta{
+            background-color:gray;
+            color:white;
+            width:950px;
+            height:400px;
+            padding:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-size: cover;
+            background-position: center;
+            font-size: 46px;
+            font-family: "Oswald", sans-serif;
+            font-weight: 200;
+        }
+        .ellos{
+            background-image: url("../assets/img/Hombre.webp");
+        }
+        .ellas{
+            background-image: url("../assets/img/mujer.jpg");
+        }
+       
+    }
+}
+.fa-whatsapp{
+    color: #04ff00;
+    font-size:5rem;
+    position:fixed;/*siempre esta fijo dentro del navegador*/
+    bottom:10px;
+    right: 10px;
+}
