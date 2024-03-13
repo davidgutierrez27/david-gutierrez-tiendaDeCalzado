@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calzado Urbano</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/e048560479.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/estilosCalzadoUrbano.css">
+    </head>
+    <body>
+        <header class="headerIndex">
+
+            <!--linea superrior negra #333333-->
+            <section class="lineaSup">
+                <br>
+            </section>
+
+            <!--barra de navegacion resposiva-->
+            <nav class="navbar navbar-expand-lg navbar-light headerIndex__bgNav">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.png" alt="logo principal" class="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end fs-4 gap-3">
+                      <li class="nav-item">
+                        <a class="nav-link active colorAct" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorInac" href="./pages/hombres.html">Hombres</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorInac" href="./pages/mujeres.html">Mujeres</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorInac" href="./pages/productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorInac" href="./pages/sobrenosotros.html">Nosotros</a>
+                      </li>
+                    </ul>                  
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <main class="main-index">
+
+            <!--carrusel de escritorio y mobile-->
+            <section class="container-fluid">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./assets/img/header1.png" class="d-block w-100 d-none" alt="img header escritorio1 ">
+                        <img src="./assets/img/headerMobile1.png" class="d-block d-md-none h-100 w-100 heightImg" alt="img header mobile1 ">
+                        <div class=" d-none d-md-block carousel-caption w-100 h-100 d-md-flex flex-column align-items-start justify-content-center fs-3 ">
+                          <h1 class="titulo-principal">COLECCION INVIERNO 2024</h1>
+                          <a class="link-encontranos btn btn-primary" href="#footer">Encontranos</a>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./assets/img/header2.png" class="d-block w-100 d-none d-md-block" alt="img header escritorio2 ">
+                        <img src="./assets/img/headerMobile2.png" class="d-block d-md-none h-100 w-100 heightImg" alt="img header mobile2 ">
+                        <div class="carousel-caption w-100 h-100 d-md-flex flex-column align-items-start justify-content-center fs-3 ">
+                            <h2 class="titulo-principal">COLECCION INVIERNO 2024</h2>
+                            <a class="link-encontranos btn btn-primary" href="#footer">Encontranos</a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/img/header3.png" class="d-block w-100 d-none d-md-block" alt="img header escritorio3 ">
+                        <img src="./assets/img/headerMobile3.png" class="d-block d-md-none h-100 w-100 heightImg" alt="img header mobile3 ">
+                        <div class="carousel-caption w-100 h-100 d-md-flex flex-column align-items-start justify-content-center fs-3 ">
+                            <h2 class="titulo-principal">COLECCION INVIERNO 2024</h2>
+                            <a class="link-encontranos btn btn-primary" href="#footer">Encontranos</a>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  
+            </section>
+
+            <!--carrusel de mobile-->
+            <section class="d-block d-md-none section-principal">
+                <img src="./assets/img/header1.png" alt="" class="img">
+                <h1 class="titulo-principal">COLECCION INVIERNO 202dasda4</h1>
+                <a class="link-encontranos" href="#footer">Encontranos</a>
+            </section>
+
+            <!--anrigua home
+    
+            <section class="section-principal">
+                <h1 class="titulo-principal">EXPRESA TU ESTILO<br>
+                <samp class="grosor-menor">sin decir una palabra.</samp></h1>
+                <br>
+                <p class="section-principal-p">Descubre las tendencias más recientes en calzado urbano.<br>
+                    la tienda más cercana y sumérgete en nuestra colección para caminar con actitud por las calles de la ciudad.<br>
+                   ¡Porque tu estilo habla por ti, elige con confianza!
+                </p>
+                <a class="link-encontranos" href="#footer">Encontranos</a>
+            </section>-->
+
+            <section class="section-tarjetasProductos">
+                <h2 class="nuestos-productos">NUESTROS PRODUCTOS</h2>
+                <section class="section-catalogo">
+                    <img class="section-catalogoImg" src="./assets/img/catalogo.jpg" alt="Nuestros productos" loading="lazy">
+                    <h3 class="section-catalogoSub">CATALOGO</h3>
+                </section>
+                <div class="tarjetasProductosDiv">
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/hombres/img_59781-731bda78ee92d3cf5e16844225150652-480-0.webp" alt="">                   
+                        <h4 class="tarjetasProductos-subtitulo">
+                            ZAPATILLAS DIOR HOMME (BLANCAS)
+                            $109.088,00 $114.048,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/hombres/img_522711-734b7636ef205477bf16936088272341-640-0.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            JORDAN RETRO 1 CHAROL
+                            $150.088,00 $182.160,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/hombres/0b72708a-6d78-4056-a545-8b0df2d24c321-165d9e92de4dac975016716501703636-640-0.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            AIR CHUNKY (BLANCA Y NEGRA)
+                            $150.088,00 $182.160,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/hombres/16336883991e9fc169224f23df394716310f8d6724_thumbnail_900x.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            AIR CHUNKY (COLOR COMBINADO)
+                            $209.088,00 $230.048,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/hombres/img_52211-aeada898df9d76953b16936025903654-640-0.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            AIR JORDAN 1 RETRO LOW OG UNC (CELESTE)
+                            $150.088,00 $182.160,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/mujer/1111.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            ZAPATILLAS DIOR HOMME (BLANCAS)
+                            $109.088,00 $114.048,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/mujer/2222.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            JORDAN RETRO 1 CHAROL
+                            $150.088,00 $182.160,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/mujer/3333.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            AIR CHUNKY (BLANCA Y NEGRA)
+                            $150.088,00 $182.160,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/mujer/4444.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            AIR CHUNKY (COLOR COMBINADO)
+                            $209.088,00 $230.048,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/mujer/5555.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            AIR JORDAN 1 RETRO LOW OG UNC (CELESTE)
+                            $150.088,00 $182.160,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/hombres/img_52211-aeada898df9d76953b16936025903654-640-0.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            AIR JORDAN 1 RETRO LOW OG UNC (CELESTE)
+                            $150.088,00 $182.160,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/mujer/1111.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            ZAPATILLAS DIOR HOMME (BLANCAS)
+                            $109.088,00 $114.048,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/mujer/2222.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            JORDAN RETRO 1 CHAROL
+                            $150.088,00 $182.160,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/mujer/3333.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            AIR CHUNKY (BLANCA Y NEGRA)
+                            $150.088,00 $182.160,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/mujer/4444.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            AIR CHUNKY (COLOR COMBINADO)
+                            $209.088,00 $230.048,00
+                        </h4>
+                    </section>
+                    <section class="tarjetasProductos">
+                        <img class="tarjetasProductos-img" src="./assets/img/mujer/5555.webp" alt="">
+                        <h4 class="tarjetasProductos-subtitulo">
+                            AIR JORDAN 1 RETRO LOW OG UNC (CELESTE)
+                            $150.088,00 $182.160,00
+                        </h4>
+                    </section>
+                </div>
+            </section>
+            <div>
+                <section class="para-ellosyellas">
+                    <section class="tarjeta ellos">
+                        <h2>PARA ELLOS</h2>
+                        <a href="">VER</a>
+    
+                    </section>
+                    <section class="tarjeta ellas">
+                        <h2>PARA ELLAS</h2>
+                        <a href="">VER</a>
+                        
+                    </section>
+                <section>
+            </div>
+            
+                <img src="./assets/img/nosotros.webp" alt="seccionsobrenosotros">
+                <h4>SOBRE NOSOTROS</h4>
+                <p>
+                    <b>¡Bienvenido a "CALZADO URBANO" en Palermo, Buenos Aires!</b>
+                    Con más de tres años liderando la escena del calzado urbano, nos hemos convertido en la opción de tendencia en Palermo y más allá. Formamos parte de las tiendas de calzado urbano más influyentes, destacando por nuestra colaboración con marcas internacionales y exclusivas importaciones.
+
+                    <b>Dirección:</b> Fray Justo Sta. María de Oro 2516, Palermo, Buenos Aires.
+                    <b>Envíos a Todo el País:</b> Llevamos la moda a cada rincón del país, con envíos eficientes y seguros.
+
+                    <b>
+                        Ofrecemos una selección única de calidad y últimas tendencias para que expreses tu autenticidad.
+                    Únete a nuestra comunidad de tendencia y descubre la satisfacción de caminar con estilo. Estamos aquí para guiarte en tu viaje hacia el look perfecto. ¡Te esperamos en "CALZADO URBANO"!
+                    </b> 
+                </p>
+                <img src="./assets/img/8baf925ec57758694081540fce6ca5d2.jpg" alt="nuestratienda">
+            </section>
+        </main>
+        <footer class="footer">
+            <a href="#">
+                <img src="./assets/img/logoprincipal.png" alt="logo principal" loading="lazy">
+            </a>
+            <nav class="contenido">
+                <h3>CONTENIDOS</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="./pages/hombres.html">Hombres</a></li>
+                    <li><a href="./pages/mujeres.html">Mujeres</a></li>
+                    <li><a href="./pages/marcas.html">Marcas</a></li>
+                    <li><a href="./pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                </ul>
+                <h3>NECESITAS AYUDA</h3>
+                    <li><a href="./404.html">Inicio</a></li>
+                    <li><a href="./pages/404.html">Tutoriales</a></li>
+                    <li><a href="./pages/404.html">Contacto</a></li>
+                    <li><a href="./pages/404.html">Atencion al cliente</a></li>
+                </ul>
+            </nav>
+            <section class="casa central">
+                <h4>Casa Central</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d905.5326401730929!2d-65.41183738401854!3d-24.79103371424131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc38315a19ec9%3A0xf256e54691b6c010!2sWoker%20By%20Sporting!5e0!3m2!1ses-419!2sar!4v1707096953172!5m2!1ses-419!2sar" width="100" height="70" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="suscribite">
+                <h4>SUSCRIBITE</h4>
+                <form action="./pages/404.html" method="post">
+                    <input type="email" placeholder="ejemplo@ejemplo.com" required id="email" name="email">
+                    <input type="submit" value="Suscribirme">
+                </form>
+            </section>
+            <section>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </section>
+        </footer>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
