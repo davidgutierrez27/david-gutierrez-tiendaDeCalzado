@@ -190,6 +190,8 @@ body:-webkit-full-page-media {
 
     /* Estilos del lOS ICONOS */
     .seccionIconos{
+        adding-right: 125px;
+        padding-left: 125px;
         margin-top: 100px;
         margin-bottom: 100px;
         .card{
@@ -222,6 +224,9 @@ body:-webkit-full-page-media {
     } 
     @media screen and (max-width: 768px){
         .seccionIconos{
+            
+            padding-right: 125px;
+            padding-left: 125px;
             margin-top: 50px;
             margin-bottom: 50px;
             .card{
@@ -248,7 +253,6 @@ body:-webkit-full-page-media {
 
     /* Estilos del las 2 Cads primcipales */
     .cardsPrincipal{
-        padding: 23px;
         margin-top: 100px;
         margin-bottom: 100px;
         .card{
@@ -258,9 +262,7 @@ body:-webkit-full-page-media {
                 border-radius: 24px;
             }
             .card-img-overlay{
-                margin-left: 10px;
-                width: 400px;
-
+                width: 45vh;
                 .card-title{
                     font-family: "Madimi One", sans-serif;
                     font-size: 2rem;
@@ -283,27 +285,16 @@ body:-webkit-full-page-media {
                     color: #EEEEEE;
                     background-color: #6C6761;
                     border-color: #242424;
-
+    
                 }           
                                 
             }
                 
         }        
     }
-    @media screen and (max-width: 768px){
-        .cardsPrincipal{         
-            margin-top: 50px;
-            margin-bottom: 50px;
-            .card{
-                .card-img-overlay{
-                    .btn-primary {
-                        width: 200px;
-                        font-size: 1rem;
-                    }                
-                }  
-            }      
-        }      
-    }
+
+
+    
     .opiniones{
         margin-top: 100px;
         h3{
@@ -311,6 +302,52 @@ body:-webkit-full-page-media {
             font-size: 2rem;
             font-weight: 500;
             color: #242424;
+        }
+        .container-fluid{
+            .align-items-center{
+                .col-md-4{
+                    .cardOpiniones {
+                        height: auto;
+                        background-color: #F4F1EA;
+                        border: 1px solid #e7e3d9;
+                        border-radius: 24px;
+                        margin: 50px 5px;
+                        padding: 25px 0px 15px 0px;
+                        .imgOpiniones {
+                            width: 25%;
+                            height: 25%;
+                            margin-top: -55px;
+                        }
+                        .card-body{
+                            height: 350px;
+                            .tituloOpiniones {
+                                font-size: 1.7rem;
+                                color: #242424;
+                                font-family: "Madimi One", sans-serif;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                            }
+                            .subtituloOpiniones {
+                                font-size: 1.2rem;
+                                color: #242424;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                            }
+                            .txtOpiniones {
+                                font-size: 1rem;
+                                color: #242424;
+                                font-weight: 500;
+                                text-align: left;
+                                margin-top: 20px;
+                                padding: 20px;
+                                margin-bottom: 10px;
+                            }
+                
+                        }
+            
+                    }
+                }
+            }
         }
         .cardOpiniones {
             height: auto;
@@ -367,6 +404,7 @@ body:-webkit-full-page-media {
     width: 100%;
     margin-top: 0px;
     margin-bottom: 100px;
+    margin-right: -12px;
     .titulo{
         font-family: "Madimi One", sans-serif;
         font-size: 2rem;
@@ -380,6 +418,7 @@ body:-webkit-full-page-media {
         grid-template-areas: "G 1 2";
     }
     .imgGrande{
+        margin-left: -24px;
         grid-area: "G";
         background-color: #F4F1EA;
         border-radius: 24px;
@@ -404,6 +443,7 @@ body:-webkit-full-page-media {
                 border-radius: 24px;
             }
             .card-body{
+                font-size:1rem;
                 border-radius: 24px;
                 background: linear-gradient(to bottom, #F4F1EA, #E0DFD7);
                 .card-title{
@@ -411,20 +451,26 @@ body:-webkit-full-page-media {
                 }
                 .card-subtitle{
                     color: #242424;
+                    
+                    font-size: 0.9;
                 }
                 .card-text{
                     color: #6C6761;
+                    
+                    font-size: .8rem;
                 }
             }
         }
     }
 }
-
-
+@media screen and (max-width: 768px){
+    .seccionMasVendidas{
+        margin-right: initial;
+    }
+}
 
 /* Estilos del header del la seccion Urbano */
 .seccionUrbano{
-    padding-left: 24px;
     top: 100px;
     width: 100%;
     margin-top: 0px;
@@ -437,7 +483,7 @@ body:-webkit-full-page-media {
     } 
     .d-flex{
         .card{
-            width: 25vh;
+            width: 30.7vh;
             border: 0px;
             border-radius: 24px;
             background-color: #FBF8F1;
@@ -468,7 +514,7 @@ body:-webkit-full-page-media {
         
         .d-flex{
             .card{
-                width: 47.7%;
+                width: 47%;
             }
             .card-body{
                 .card-title{
@@ -507,63 +553,61 @@ body:-webkit-full-page-media {
                 font-size: 2rem;
             }
         }
-    }
-
-
-/* Estilos del grilla */
-    .grillaMain{
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "acordeon productos"
-                            "acordeon productos";
-    }
-    @media screen and (max-width: 768px){
-        .grillaMain{
-            display: block;
-        }  
-    }
-
-    /* Estilos del Acordeon */
-    .acordeon{
-        grid-area: acordeon;
-        margin-top: -20px;
-        .titulo{
-            font-family: "Madimi One", sans-serif;
-            font-size: 2rem;
-            font-weight: 500;
-            color: #242424;
-        }
-        padding:20px;
-        .accordion-item{
-            background-color:#EEEEEE;
-            border: 0px;
-            .accordion-button{
-                font-family: "Madimi One", sans-serif;
-                font-weight: 500;
-                font-size: 1.5rem;
-                color: #242424;
-            }
-            .accordion-button{
-                background-color: #EEEEEE;
-            }
-            .accordion-button:not(.collapsed){
-                background-color: #C6BDAE;
-            }
-            .accordion-body{
-                color: #242424;
-            }
-            
-        }
-        
-        /* Estilos del Productos */
-        .seccionUrbano{
-            grid-area: productos;
-            justify-content: center;
-        }
-    }
+    } 
 }
 
+/* Estilos del grilla */
+.grillaMain{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "acordeon productos"
+                        "acordeon productos";
+}
+@media screen and (max-width: 768px){
+    .grillaMain{
+        display: block;
+    }  
+}
+
+/* Estilos del Acordeon */
+.acordeon{
+    grid-area: acordeon;
+    margin-top: -20px;
+    .titulo{
+        font-family: "Madimi One", sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #242424;
+    }
+    padding:20px;
+    .accordion-item{
+        background-color:#EEEEEE;
+        border: 0px;
+        .accordion-button{
+            font-family: "Madimi One", sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: #242424;
+        }
+        .accordion-button{
+            background-color: #EEEEEE;
+        }
+        .accordion-button:not(.collapsed){
+            background-color: #C6BDAE;
+        }
+        .accordion-body{
+            color: #242424;
+        }
+        
+    }
+    
+    /* Estilos del Productos */
+    .seccionUrbano{
+        grid-area: productos;
+        justify-content: center;
+    }
+}
 
 
 /* Estilos del main del Primavera Verano */
@@ -588,60 +632,6 @@ body:-webkit-full-page-media {
             }
         }
     }
-
-
-/* Estilos del grilla */
-    .grillaMain{
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: "acordeon productos"
-                            "acordeon productos";
-    }
-    @media screen and (max-width: 768px){
-        .grillaMain{
-            display: block;
-        }  
-    }
-
-    /* Estilos del Acordeon */
-    .acordeon{
-        grid-area: acordeon;
-        margin-top: -20px;
-        .titulo{
-            font-family: "Madimi One", sans-serif;
-            font-size: 2rem;
-            font-weight: 500;
-            color: #242424;
-        }
-        padding:20px;
-        .accordion-item{
-            background-color:#EEEEEE;
-            border: 0px ;
-            .accordion-button{
-                font-family: "Madimi One", sans-serif;
-                font-weight: 500;
-                font-size: 1.5rem;
-                color: #242424;
-            }
-            .accordion-button{
-                background-color: #EEEEEE;
-            }
-            .accordion-button:not(.collapsed){
-                background-color: #C6BDAE;
-            }
-            .accordion-body{
-                color: #242424;
-            }
-            
-        }
-        
-        /* Estilos del Productos */
-        .seccionUrbano{
-            grid-area: productos;
-            justify-content: center;
-        }
-    }
     .seccionMasVendidas{
         top: 100px;
         width: 100%;
@@ -654,6 +644,7 @@ body:-webkit-full-page-media {
         } 
         .d-flex{
             .card{
+                width: 40vh;
                 border: 0px;
                 border-radius: 24px;
                 background-color: #FBF8F1;
@@ -678,21 +669,50 @@ body:-webkit-full-page-media {
         }
     }
     @media screen and (max-width: 768px){
-        .seccionUrbano{
-            margin-top: 50px;
-            margin-bottom: 50px;
-            } 
-        .card-body{
-            .card-title{
-                font-size:1.2rem;
+        .mainPrimaveraVerano{
+            .seccionUrbano{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                
+                .d-flex{
+                    .card{
+                        width: 47%;
+                    }
+                    .card-body{
+                        .card-title{
+                        font-size:1rem;
+                        }
+                        .card-subtitle{
+                            font-size: 0.9;
+                        }
+                        .card-text{
+                            font-size: .8rem;
+                        }
+                        }
+                }
+                
             }
-            .card-subtitle{
-                font-size: 1;
-                color: #242424;
-            }
-            .card-text{
-                font-size: .9rem;
-                color: #242424;
+            .seccionMasVendidas{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                }
+                .d-flex{
+                    .card{
+                        width: initial;
+                    }
+                }
+                .card-body{
+                    .card-title{
+                        font-size:1.2rem;
+                }
+                .card-subtitle{
+                    font-size: 1;
+                    color: #242424;
+                }
+                .card-text{
+                    font-size: .9rem;
+                    color: #242424;
+                }
             }
         }
     }
