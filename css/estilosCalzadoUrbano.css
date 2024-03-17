@@ -190,7 +190,7 @@ body:-webkit-full-page-media {
 
     /* Estilos del lOS ICONOS */
     .seccionIconos{
-        adding-right: 125px;
+        padding-right: 125px;
         padding-left: 125px;
         margin-top: 100px;
         margin-bottom: 100px;
@@ -267,30 +267,47 @@ body:-webkit-full-page-media {
                     font-family: "Madimi One", sans-serif;
                     font-size: 2rem;
                     font-weight: 500;
-                    color: #242424;
+                    color: #EEEEEE;
                 }
                 p{
                     font-size: 1.2rem;
                     font-weight: 350;
+                    color:#C6BDAE;
                 }
                 .btn-primary {
-                    color: #EEEEEE;
-                    background-color: #242424;
-                    border-color: #242424;
+                    color: #242424;
+                    background-color: #C6BDAE;
+                    border: 0px;
                     width: 250px;
                     font-size: 1.3rem;                 
                     text-align: center;
                 }
                     .btn-primary:hover {
-                    color: #EEEEEE;
-                    background-color: #6C6761;
-                    border-color: #242424;
+                    color: #242424;
+                    background-color: #EEEEEE;
     
                 }           
                                 
             }
                 
         }        
+    }
+    @media screen and (max-width: 768px){
+        .cardsPrincipal{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .card{
+                .card-img-overlay{
+                    width: 100%;
+                    .btn-primary {
+                        width: 160px;
+                        font-size: 0.8rem;
+                    }         
+                                    
+                }
+                    
+            }        
+        }
     }
 
 
@@ -313,6 +330,7 @@ body:-webkit-full-page-media {
                         border-radius: 24px;
                         margin: 50px 5px;
                         padding: 25px 0px 15px 0px;
+                    
                         .imgOpiniones {
                             width: 25%;
                             height: 25%;
@@ -349,46 +367,53 @@ body:-webkit-full-page-media {
                 }
             }
         }
-        .cardOpiniones {
-            height: auto;
-            background-color: #F4F1EA;
-            border: 1px solid #e7e3d9;
-            border-radius: 24px;
-            margin: 50px 5px;
-            padding: 25px 0px 15px 0px;
-            .imgOpiniones {
-                width: 25%;
-                height: 25%;
-                margin-top: -55px;
+    }
+    @media screen and (max-width: 768px){
+        .opiniones{
+            margin-top: 100px;
+            h3{
+                font-family: "Madimi One", sans-serif;
+                font-size: 2rem;
+                font-weight: 500;
+                color: #242424;
             }
-            .card-body{
-                height: 350px;
-                .tituloOpiniones {
-                    font-size: 1.7rem;
-                    color: #242424;
-                    font-family: "Madimi One", sans-serif;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
+            .container-fluid{
+                .align-items-center{
+                    .col-md-4{
+                        .cardOpiniones {
+                            height: auto;
+                            background-color: #F4F1EA;
+                            border: 1px solid #e7e3d9;
+                            border-radius: 24px;
+                            margin: 50px 5px;
+                            padding: 25px 0px 15px 0px;
+                        
+                            .card-body{
+                                height: 273px;
+                                .tituloOpiniones {
+                                    font-size: 1.2rem;
+                                    margin-top: 5px;
+                                    margin-bottom: 5px;
+                                }
+                                .subtituloOpiniones {
+                                    font-size: 1rem;
+                                    margin-top: 5px;
+                                    margin-bottom: 5px;
+                                }
+                                .txtOpiniones {
+                                    font-size: 0.8rem;
+                                    margin-top: 10px;
+                                    padding: 10px;
+                                    margin-bottom: 5px;
+                                }
+                    
+                            }
+                
+                        }
+                    }
                 }
-                .subtituloOpiniones {
-                    font-size: 1.2rem;
-                    color: #242424;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                }
-                .txtOpiniones {
-                    font-size: 1rem;
-                    color: #242424;
-                    font-weight: 500;
-                    text-align: left;
-                    margin-top: 20px;
-                    padding: 20px;
-                    margin-bottom: 10px;
-                }
-    
             }
-
-        }
+        }    
     }
     
 }
@@ -483,7 +508,7 @@ body:-webkit-full-page-media {
     } 
     .d-flex{
         .card{
-            width: 30.7vh;
+            width: 30.9vh;
             border: 0px;
             border-radius: 24px;
             background-color: #FBF8F1;
@@ -514,7 +539,7 @@ body:-webkit-full-page-media {
         
         .d-flex{
             .card{
-                width: 47%;
+                width: 46%;
             }
             .card-body{
                 .card-title{
