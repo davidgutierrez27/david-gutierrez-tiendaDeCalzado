@@ -15,6 +15,11 @@
             margin-left: $pix100;
             margin-right: $pix100;
             }
+        @media screen and (max-width: 768px){
+            .logo{
+                margin-left: 90px;
+                }
+        }
 
         .navbar-nav{
             .dropdown-menu{

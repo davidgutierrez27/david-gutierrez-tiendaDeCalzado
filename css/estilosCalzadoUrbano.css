@@ -37,6 +37,11 @@ body {
   margin-left: 150px;
   margin-right: 150px;
 }
+@media screen and (max-width: 768px) {
+  .headerIndex .navbar-dark.headerIndex__bgNav .logo {
+    margin-left: 90px;
+  }
+}
 .headerIndex .navbar-dark.headerIndex__bgNav .navbar-nav .dropdown-menu {
   border: 0px;
   background-color: #DFDBD8;
@@ -349,7 +354,7 @@ body {
     color: #242424;
   }
   .mainIndex .opiniones .container-fluid .align-items-center .col-md-4 .cardOpiniones .card-body {
-    height: 273px;
+    height: 220px;
   }
   .mainIndex .opiniones .container-fluid .align-items-center .col-md-4 .cardOpiniones .card-body .tituloOpiniones {
     font-size: 1.2rem;
@@ -385,7 +390,6 @@ body {
 .seccionMasVendidas {
   top: 150px;
   width: 100%;
-  margin-top: 0px;
   margin-bottom: 150px;
   margin-right: -12px;
 }
@@ -515,10 +519,39 @@ body {
 
 @media screen and (max-width: 768px) {
   .seccionMasVendidas {
+    margin-top: 100px;
     margin-right: initial;
   }
-  .seccionMasVendidas .card-body {
-    padding-bottom: 50px;
+  .seccionMasVendidas .d-flex .card .card-body .card-title {
+    font-size: 1rem;
+  }
+  .seccionMasVendidas .d-flex .card .card-body .card-subtitle {
+    font-size: 0.8rem;
+  }
+  .seccionMasVendidas .d-flex .card .card-body .card-text {
+    font-size: 0.7rem;
+  }
+  .seccionMasVendidas .d-flex .card .card-body .pequeñas-imagenes img {
+    width: 50px;
+  }
+  .seccionMasVendidas .d-flex .card.card2 {
+    margin-top: initial;
+  }
+  .seccionMasVendidas .d-flex .card.card2 .card-body.tarjetas {
+    margin-top: -120px;
+  }
+  .seccionMasVendidas .d-flex .card.card2 .card-body.tarjetas .card-title {
+    font-size: 1rem;
+  }
+  .seccionMasVendidas .d-flex .card.card2 .card-body.tarjetas .card-subtitle {
+    margin-top: 80px;
+    font-size: 0.8rem;
+  }
+  .seccionMasVendidas .d-flex .card.card2 .card-body.tarjetas .card-text {
+    font-size: 0.7rem;
+  }
+  .seccionMasVendidas .d-flex .card.card2 .card-body.tarjetas .pequeñas-imagenes img {
+    width: 50px;
   }
 }
 /* Estilos del header del la seccion Urbano */
@@ -577,13 +610,13 @@ body {
   margin-top: -15px;
   border-radius: 24px;
 }
-.seccionUrbano .d-flex .card .card-body img {
+.seccionUrbano .d-flex .card .card-body .pequeñas-imagenes img {
   width: 70px;
   height: auto;
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.seccionUrbano .d-flex .card .card-body img:hover {
+.seccionUrbano .d-flex .card .card-body .pequeñas-imagenes img:hover {
   transform: scale(1.5);
   opacity: 0.7;
 }
@@ -596,14 +629,17 @@ body {
   .seccionUrbano .d-flex .card {
     width: 46%;
   }
-  .seccionUrbano .d-flex .card-body .card-title {
+  .seccionUrbano .d-flex .card .card-body .card-title {
     font-size: 1rem;
   }
-  .seccionUrbano .d-flex .card-body .card-subtitle {
-    font-size: 0.9rem;
-  }
-  .seccionUrbano .d-flex .card-body .card-text {
+  .seccionUrbano .d-flex .card .card-body .card-subtitle {
     font-size: 0.8rem;
+  }
+  .seccionUrbano .d-flex .card .card-body .card-text {
+    font-size: 0.7rem;
+  }
+  .seccionUrbano .d-flex .card .card-body .pequeñas-imagenes img {
+    width: 50px;
   }
 }
 /* Estilos del grilla */

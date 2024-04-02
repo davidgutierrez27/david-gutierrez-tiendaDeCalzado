@@ -21,7 +21,6 @@
 .seccionMasVendidas{
     top: $pix100;
     width: $por100to;
-    margin-top: $pix0;
     margin-bottom: $pix100;
     margin-right: -12px;
     .titulo{
@@ -159,9 +158,50 @@
 }
 @media screen and (max-width: 768px){
     .seccionMasVendidas{
+        margin-top: 100px;
         margin-right: initial;
-        .card-body{
-            padding-bottom: 50px;
+        .d-flex{
+            .card{
+                .card-body{
+                    .card-title{
+                    font-size:$tipografia-1rem;
+                    }
+                    .card-subtitle{
+                        font-size: $tipografia-0-8rem;
+                    }
+                    .card-text{
+                        font-size: $tipografia-0-7rem;
+                    }
+                    .pequeñas-imagenes {
+                        img{
+                            width: 50px;
+                        }      
+                    }
+                }
+            }
+        }
+        .d-flex{
+            .card.card2{
+                margin-top: initial;
+                .card-body.tarjetas{
+                    margin-top: -120px;
+                    .card-title{
+                    font-size:$tipografia-1rem;
+                    }
+                    .card-subtitle{
+                        margin-top: 80px;
+                        font-size: $tipografia-0-8rem;
+                    }
+                    .card-text{
+                        font-size: $tipografia-0-7rem;
+                    }
+                    .pequeñas-imagenes {
+                        img{
+                            width: 50px;
+                        }      
+                    }
+                }
+            }
         }
     }
 }
@@ -232,18 +272,16 @@
                     margin-bottom: 25px;
                     margin-top: -15px;
                     border-radius: 24px;
-                    
-                }
-        
-                img{
-                    width: 70px;
-                    height: auto;
-                    cursor: pointer;
-                    transition: all .5s ease;
-                    &:hover {
-                        transform: scale(1.5);
-                        opacity: 0.7;
-                    }
+                    img{
+                        width: 70px;
+                        height: auto;
+                        cursor: pointer;
+                        transition: all .5s ease;
+                        &:hover {
+                            transform: scale(1.5);
+                            opacity: 0.7;
+                        }
+                    }      
                 }
             }
         }
@@ -257,22 +295,26 @@
         .d-flex{
             .card{
                 width: 46%;
+                .card-body{
+                    .card-title{
+                    font-size:$tipografia-1rem;
+                    }
+                    .card-subtitle{
+                        font-size: $tipografia-0-8rem;
+                    }
+                    .card-text{
+                        font-size: $tipografia-0-7rem;
+                    }
+                    .pequeñas-imagenes {
+                        img{
+                            width: 50px;
+                        }      
+                    }
+                 }
             }
-            .card-body{
-                .card-title{
-                font-size:$tipografia-1rem;
-                }
-                .card-subtitle{
-                    font-size: $tipografia-0-9rem;
-                }
-                .card-text{
-                    font-size: $tipografia-0-8rem;
-                }
-             }
         }
     }
 }
-
 
 
 
