@@ -1,0 +1,29 @@
+/* Estilos del bienbenida del HOMBRE-MUJER-COLECCIONES-NOSOTROS */
+.bienbenida{
+    margin-top: 125px;
+    .titulo-principal{
+        font-family: $tipografia-principal;
+        font-weight: 700;
+        font-size: 7rem;
+        color: $color-principal;
+        width: 100%;
+    }
+    .subtitulo{
+        color: $color-botones1;
+        font-family: $tipografia-principal;
+        padding-left: 29px;
+        font-size: $tipografia-2rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .bienbenida{
+        margin-top: 150px;
+        margin-bottom: 30px;
+        .titulo-principal{
+            font-size: $tipografia-2rem;
+        }
+        .subtitulo{
+            display: none;
+        }
+    }
+} 

@@ -1,0 +1,138 @@
+/* Estilos del footer GENERAL */
+
+.footer{
+    padding:70px;
+    grid-area: footer;
+    background-color: $color-secundario;
+
+    .copy{
+        margin-top:30px;
+        width:38%;
+        p{ 
+            font-weight: 300;
+            font-size:$tipografia-0-8rem;
+            color:$color-botones1;
+        }
+    }
+   
+    .contenedorFooter{
+        font-size: $tipografia-1-5rem;
+        margin-bottom: 30px;
+        gap:10px;
+        .divNavg{
+            .nav1{
+                margin-right: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        a{
+            color:$color-botones1;
+            text-decoration: none;
+            &:hover{
+                color:$color-principal;
+            }
+            &:active{
+                color:$color-principal;
+            }
+
+        }
+        .htitulo{
+            padding-left: 30px;
+        }
+        h2,h3,h4{                   
+            font-style: normal;
+            font-family: $tipografia-principal;
+            font-size: $tipografia-1-5rem;
+            font-weight: 500;
+            color: $color-principal;
+            margin-bottom: 10px;
+        }
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 10px;
+            }
+        }
+        .casaCentral{
+            margin-bottom: 30px;
+        }
+        .subscribirse{
+            .contacto{
+                padding-top: 60px;
+                .fa-instagram.fa-facebook{
+                    width: 20px;
+                    padding-right: 10px;
+                }
+            }
+        form{       
+            input[type="email"]{
+                padding: 0 15px;
+                max-width: $por100to;
+                width: $por100to;
+                height: 42px;
+                box-shadow: none;
+                vertical-align: middle;
+                font-size: $tipografia-0-8rem;
+              
+            }
+            input{
+                background-color: $color-botones1;
+                border-radius: 5px;
+              }
+            input[type="email"]::placeholder{
+              color:$color-secundario;
+            }
+            input[type="email"]:focus::placeholder{
+               font-size: $tipografia-1rem;
+               color: $color-secundario;
+            }
+
+
+            input[type="submit"]{
+                background-color: $color-calzadoSuela;
+                color: $color-principal;
+                padding: 12px 20px;
+                font-size: $tipografia-1rem;
+                line-height: 18px;
+                vertical-align: middle;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: .3px;
+                font-weight: 400;
+                border: $pix0;
+                border-radius: 5px;
+            }
+
+        }
+       
+        .logoFooter{
+            width: $pix100;
+        }
+        
+    }
+  
+}
+}
+@media screen and (max-width: 768px){
+    .footer{
+        padding: 25px 12px 25px 25px;
+        .copy{
+            width:$por100to;           
+        }
+        .contenedorFooter{
+            
+            .divNavg{
+                .nav1{
+                    margin-left: -30px;
+                    margin-right: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+            .subscribirse{
+                input[type="submit"]{
+                    width: 130px;
+                    
+                }
+            }
+    }   }
+}

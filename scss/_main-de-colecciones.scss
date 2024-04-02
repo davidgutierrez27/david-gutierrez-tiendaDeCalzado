@@ -1,0 +1,87 @@
+/* Estilos del main del las COLECCIONES */
+.mainColecciones{
+    .seccionMasVendidas{
+        top: $pix100;
+        width: $por100to;
+        margin-bottom: $pix100;
+        .titulo{
+            font-family: $tipografia-principal;
+            font-size: $tipografia-2rem;
+            font-weight: 500;
+            color: $color-secundario;
+        } 
+        .d-flex{
+            .card{
+                width: 40vh;
+                border: $pix0;
+                border-radius: 24px;
+                background-color: $color-card1;
+                .card-img-top{
+                    border: $pix0;
+                    border-radius: 24px;
+                }
+                .card-body{
+                    border-radius: 24px;
+                    background-color: $color-card1;
+                    .card-title{
+                        color: $color-secundario;
+                    }
+                    .card-subtitle{
+                        color: $color-secundario;
+                    }
+                    .card-text{
+                        color: $color-calzadoNegro;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .mainPrimaveraVerano{
+            .seccionUrbano{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                
+                .d-flex{
+                    .card{
+                        width: 47%;
+                    }
+                    .card-body{
+                        .card-title{
+                        font-size:$tipografia-1rem;
+                        }
+                        .card-subtitle{
+                            font-size: $tipografia-0-9rem;
+                        }
+                        .card-text{
+                            font-size: $tipografia-0-8rem;
+                        }
+                        }
+                }
+                
+            }
+            .seccionMasVendidas{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                }
+                .d-flex{
+                    .card{
+                        width: initial;
+                    }
+                }
+                .card-body{
+                    .card-title{
+                        font-size:$tipografia-1-2rem;
+                }
+                .card-subtitle{
+                    font-size: 1;
+                    color: $color-secundario;
+                }
+                .card-text{
+                    font-size: $tipografia-0-9rem;
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+}
