@@ -59,7 +59,22 @@
                 .btn-primary3{
                     @include botones($color-principal, $color-principal, $color-boton-hover , $color-boton-hover)
                 }
-
+                
+                @media screen and (max-width: 768px){
+                    .btn-primary1{
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                    }
+                    .btn-primary2{
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                    }
+                    .btn-primary3{
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                    }  
+                }
+                
                 @media screen and (max-width: 768px){
                     .carousel-caption {
                         left: 0%;
@@ -84,6 +99,8 @@
             }
         }
     }
+
+
 
 
     /* Estilos del lOS ICONOS */
