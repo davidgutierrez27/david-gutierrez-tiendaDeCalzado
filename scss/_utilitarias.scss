@@ -345,28 +345,46 @@
         font-weight: 500;
         color: $color-secundario;
     }
-    padding:20px;
-    .accordion-item{
-        background-color: $color-principal;
-        border: $pix0;
-        .accordion-button{
-            font-family: $tipografia-principal;
-            font-weight: 500;
+    @media screen and (max-width: 768px){
+        .titulo{
             font-size: $tipografia-1-5rem;
-            color: $color-secundario;
-        }
-        .accordion-button{
-            background-color: $color-principal;
-        }
-        .accordion-button:not(.collapsed){
-            background-color: $color-botones1;
-        }
-        .accordion-body{
-            color: $color-secundario;
-        }
-        
+        } 
     }
-    
+    padding:20px;
+    .accordion{
+        .accordion-item{
+            background-color: $color-principal;
+            border: $pix0;
+            .accordion-button{
+                font-family: $tipografia-principal;
+                font-weight: 500;
+                font-size: $tipografia-1-5rem;
+                color: $color-secundario;
+            }
+            .accordion-button{
+                background-color: $color-principal;
+            }
+            .accordion-button:not(.collapsed){
+                background-color: $color-botones1;
+            }
+            .accordion-body{
+                color: $color-secundario;
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .accordion{
+            .accordion-item{
+                .accordion-button{
+                    font-weight: 400;
+                    font-size: $tipografia-1rem;
+                }
+                .accordion-body{
+                    font-size: $tipografia-0-8rem;
+                }
+            }
+        }
+    }
     /* Estilos del Productos */
     .seccionUrbano{
         grid-area: productos;

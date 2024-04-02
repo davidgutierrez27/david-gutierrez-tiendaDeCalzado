@@ -669,24 +669,38 @@ body {
   font-weight: 500;
   color: #242424;
 }
-.acordeon .accordion-item {
+@media screen and (max-width: 768px) {
+  .acordeon .titulo {
+    font-size: 1.5rem;
+  }
+}
+.acordeon .accordion .accordion-item {
   background-color: #EEEEEE;
   border: 0px;
 }
-.acordeon .accordion-item .accordion-button {
+.acordeon .accordion .accordion-item .accordion-button {
   font-family: "Madimi One", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   color: #242424;
 }
-.acordeon .accordion-item .accordion-button {
+.acordeon .accordion .accordion-item .accordion-button {
   background-color: #EEEEEE;
 }
-.acordeon .accordion-item .accordion-button:not(.collapsed) {
+.acordeon .accordion .accordion-item .accordion-button:not(.collapsed) {
   background-color: #DFDBD8;
 }
-.acordeon .accordion-item .accordion-body {
+.acordeon .accordion .accordion-item .accordion-body {
   color: #242424;
+}
+@media screen and (max-width: 768px) {
+  .acordeon .accordion .accordion-item .accordion-button {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .acordeon .accordion .accordion-item .accordion-body {
+    font-size: 0.8rem;
+  }
 }
 .acordeon .seccionUrbano {
   grid-area: productos;
