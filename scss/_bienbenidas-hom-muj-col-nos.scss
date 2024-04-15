@@ -1,0 +1,45 @@
+/* Estilos del bienbenida del HOMBRE-MUJER-COLECCIONES-NOSOTROS */
+.bienbenida{
+    margin-top: 12vh;
+    .card{
+        border: 0px;
+        
+        .card-img-overlay{  
+            .titulo-principal{
+                font-family: $tipografia-principal;
+                font-weight: 700;
+                font-size: 7rem;
+                color: $color-principal;
+                width: 100%;
+            }
+            .subtitulo{
+                color: $color-botones1;
+                font-family: $tipografia-principal;
+                padding-left: 29px;
+                font-size: $tipografia-2rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .bienbenida{
+        margin-top: 14.5vh;
+        margin-bottom: 30px;
+        height: 200px;
+        .card{
+            .card-img{
+                height: 200px;
+                width: auto;
+                object-fit: cover;
+            }
+            .card-img-overlay{
+                .titulo-principal{
+                    font-size: $tipografia-3rem;
+                }
+                .subtitulo{
+                    display: none;
+                }
+            }
+        }
+    }
+} 
