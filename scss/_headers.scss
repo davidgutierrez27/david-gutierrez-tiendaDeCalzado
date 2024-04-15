@@ -4,6 +4,7 @@
     top: 0;  
     z-index: 1000;
     .lineaSup{
+        height: 1.8vh;
         background-color: $color-calzadoNegro;
     }
     .navbar-dark.headerIndex__bgNav{
@@ -11,7 +12,7 @@
         .logo{
             top: 17px;
             left: 123px;
-            width: 247px;
+            width: 25vh;
             margin-left: $pix100;
             margin-right: $pix100;
             }

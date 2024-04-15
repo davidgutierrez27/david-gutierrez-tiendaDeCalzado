@@ -25,6 +25,7 @@ body {
   z-index: 1000;
 }
 .headerIndex .lineaSup {
+  height: 1.8vh;
   background-color: #303030;
 }
 .headerIndex .navbar-dark.headerIndex__bgNav {
@@ -33,7 +34,7 @@ body {
 .headerIndex .navbar-dark.headerIndex__bgNav .logo {
   top: 17px;
   left: 123px;
-  width: 247px;
+  width: 25vh;
   margin-left: 150px;
   margin-right: 150px;
 }
@@ -95,32 +96,32 @@ body {
   color: #242424;
   font-family: "Madimi One", sans-serif;
   font-weight: 700;
-  font-size: 7rem;
+  font-size: 10vh;
   margin-top: 140px;
   text-align: start;
-  width: 600px;
+  width: 40vh;
 }
 .mainIndex .carousel .carousel-inner .carousel-item .titulo-principal2 {
   color: #242424;
   font-family: "Madimi One", sans-serif;
   font-weight: 700;
-  font-size: 7rem;
+  font-size: 10vh;
   margin-top: 140px;
   text-align: start;
-  width: 600px;
+  width: 40vh;
 }
 .mainIndex .carousel .carousel-inner .carousel-item .titulo-principal3 {
   color: #DFDBD8;
   font-family: "Madimi One", sans-serif;
   font-weight: 700;
-  font-size: 7rem;
+  font-size: 10vh;
   margin-top: 140px;
   text-align: start;
-  width: 600px;
+  width: 40vh;
 }
 .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1 {
   color: #EEEEEE;
-  background-color: #A31420;
+  background-color: #c3000d;
   width: 300px;
   padding: 10px 20px;
   margin-top: 50px;
@@ -132,11 +133,11 @@ body {
 .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1:hover {
   transform: scale(1.1);
   color: #EEEEEE;
-  background-color: #ff0026;
+  background-color: #ff0000;
 }
 .mainIndex .carousel .carousel-inner .carousel-item .btn-primary2 {
   color: #EEEEEE;
-  background-color: #A31420;
+  background-color: #c3000d;
   width: 300px;
   padding: 10px 20px;
   margin-top: 50px;
@@ -148,11 +149,11 @@ body {
 .mainIndex .carousel .carousel-inner .carousel-item .btn-primary2:hover {
   transform: scale(1.1);
   color: #EEEEEE;
-  background-color: #ff0026;
+  background-color: #ff0000;
 }
 .mainIndex .carousel .carousel-inner .carousel-item .btn-primary3 {
   color: #EEEEEE;
-  background-color: #ff0026;
+  background-color: #c3000d;
   width: 300px;
   padding: 10px 20px;
   margin-top: 50px;
@@ -164,7 +165,7 @@ body {
 .mainIndex .carousel .carousel-inner .carousel-item .btn-primary3:hover {
   transform: scale(1.1);
   color: #EEEEEE;
-  background-color: #ff0026;
+  background-color: #ff0000;
 }
 @media screen and (max-width: 768px) {
   .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1 {
@@ -251,29 +252,29 @@ body {
 .mainIndex .cardsPrincipal {
   margin-bottom: 150px;
 }
-.mainIndex .cardsPrincipal .card {
+.mainIndex .cardsPrincipal .hombreMujer .card {
   background: rgba(255, 0, 85, 0);
   border: 0px;
   transition: all 0.3s ease;
 }
-.mainIndex .cardsPrincipal .card:hover {
+.mainIndex .cardsPrincipal .hombreMujer .card:hover {
   transform: scale(1.02);
 }
-.mainIndex .cardsPrincipal .card:hover img {
+.mainIndex .cardsPrincipal .hombreMujer .card:hover img {
   filter: brightness(40%);
 }
-.mainIndex .cardsPrincipal .card img {
+.mainIndex .cardsPrincipal .hombreMujer .card img {
   width: 100%;
   height: auto;
   border-radius: 24px;
   filter: brightness(70%);
   transition: filter 0.3s ease;
 }
-.mainIndex .cardsPrincipal .card .card-img-overlay {
+.mainIndex .cardsPrincipal .hombreMujer .card .card-img-overlay {
   width: 100%;
   height: 100%;
 }
-.mainIndex .cardsPrincipal .card .card-img-overlay .card-title {
+.mainIndex .cardsPrincipal .hombreMujer .card .card-img-overlay .card-title {
   padding-top: 50px;
   padding-left: 30px;
   font-family: "Madimi One", sans-serif;
@@ -281,7 +282,7 @@ body {
   font-weight: 500;
   color: #EEEEEE;
 }
-.mainIndex .cardsPrincipal .card .card-img-overlay p {
+.mainIndex .cardsPrincipal .hombreMujer .card .card-img-overlay p {
   position: absolute;
   padding-top: 120px;
   padding-left: 30px;
@@ -293,7 +294,7 @@ body {
   opacity: 0;
   transition: filter 0.9s ease;
 }
-.mainIndex .cardsPrincipal .card .card-img-overlay p:hover {
+.mainIndex .cardsPrincipal .hombreMujer .card .card-img-overlay p:hover {
   opacity: 1;
 }
 @media screen and (max-width: 768px) {
@@ -301,14 +302,149 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .mainIndex .cardsPrincipal .card .card-img-overlay {
+  .mainIndex .cardsPrincipal .hombreMujer .card .card-img-overlay {
     width: 100%;
   }
-  .mainIndex .cardsPrincipal .card .card-img-overlay .card-title {
+  .mainIndex .cardsPrincipal .hombreMujer .card .card-img-overlay .card-title {
     font-size: 2rem;
   }
-  .mainIndex .cardsPrincipal .card .card-img-overlay p {
+  .mainIndex .cardsPrincipal .hombreMujer .card .card-img-overlay p {
     display: none;
+  }
+}
+.mainIndex .seccionMasVendidas1 {
+  top: 150px;
+  width: 100%;
+  margin-bottom: 150px;
+}
+.mainIndex .seccionMasVendidas1 .titulo {
+  position: relative;
+  font-family: "Madimi One", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #242424;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+  background: rgba(255, 0, 85, 0);
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata:hover {
+  transform: scale(1.02);
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata:hover .cardImg {
+  filter: brightness(40%);
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata:hover .parrafo {
+  opacity: 1;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata .cardImg {
+  filter: brightness(60%);
+  transition: filter 0.3s ease;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 24px 24px 24px 24px;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-title1 {
+  padding-top: 50px;
+  padding-left: 30px;
+  font-family: "Madimi One", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #EEEEEE;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata .parrafo {
+  position: absolute;
+  padding-top: 120px;
+  padding-left: 30px;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #EEEEEE;
+  opacity: 0;
+  transition: filter 0.9s ease;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body {
+  position: absolute;
+  top: 42.5vh;
+  height: 30vh;
+  border-radius: 24px 0px 24px 24px;
+  margin-top: -24px;
+  padding: 20px;
+  width: 100%;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body .card-texto {
+  padding-left: 20px;
+  width: 25%;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body .card-texto .card-title {
+  color: #EEEEEE;
+  font-size: 2rem;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body .card-texto .card-subtitle {
+  color: #EEEEEE;
+  font-size: 1.5rem;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body .card-texto .card-text {
+  color: #EEEEEE;
+  font-size: 1rem;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body .pequeñas-imagenes {
+  height: 100%;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 25px;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body .pequeñas-imagenes .imgPeque {
+  filter: brightness(none);
+  width: 24%;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  opacity: 0.9;
+}
+.mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body .pequeñas-imagenes .imgPeque:hover {
+  transform: scale(1.3);
+  opacity: 1;
+  z-index: 1000;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .seccionMasVendidas1 .d-flex .tarjata .cardImg {
+    height: 50vh;
+  }
+  .mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-title1 {
+    text-align: center;
+    padding-left: 0px;
+    font-size: 2rem;
+  }
+  .mainIndex .seccionMasVendidas1 .d-flex .tarjata .parrafo {
+    display: none;
+  }
+  .mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body {
+    position: absolute;
+    top: 15vh;
+    padding: 20px;
+    width: 100%;
+  }
+  .mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body .card-texto {
+    padding-left: 20px;
+    width: 100%;
+  }
+  .mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body .card-texto .card-title {
+    font-size: 1.5rem;
+  }
+  .mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body .card-texto .card-subtitle {
+    font-size: 1.2rem;
+  }
+  .mainIndex .seccionMasVendidas1 .d-flex .tarjata .card-body .card-texto .card-text {
+    font-size: 1rem;
   }
 }
 .mainIndex .opiniones {
@@ -629,10 +765,13 @@ body {
   height: auto;
   cursor: pointer;
   transition: all 0.5s ease;
+  opacity: 0.8;
 }
 .seccionUrbano .d-flex .card .card-body .pequeñas-imagenes img:hover {
   transform: scale(1.5);
-  opacity: 0.7;
+  opacity: 1;
+  z-index: 1000;
+  margin: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -723,7 +862,7 @@ body {
 
 /* Estilos del bienbenida del HOMBRE-MUJER-COLECCIONES-NOSOTROS */
 .bienbenida {
-  margin-top: 125px;
+  margin-top: 12vh;
 }
 .bienbenida .card {
   border: 0px;
@@ -744,7 +883,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .bienbenida {
-    margin-top: 140px;
+    margin-top: 14.5vh;
     margin-bottom: 30px;
     height: 200px;
   }
@@ -835,6 +974,9 @@ body {
 /* Estilos del main de NOSOTROS */
 .mainNosotros {
   height: auto;
+}
+.mainNosotros span {
+  font-weight: 600;
 }
 .mainNosotros .bienbenida .titulo-principal {
   color: #EEEEEE;
@@ -946,11 +1088,14 @@ body {
 .footer .contenedorFooter .casaCentral {
   margin-bottom: 30px;
 }
+.footer .contenedorFooter .subscribirse {
+  width: 30%;
+}
 .footer .contenedorFooter .subscribirse .contacto {
   padding-top: 60px;
 }
 .footer .contenedorFooter .subscribirse .contacto .fa-instagram.fa-facebook {
-  width: 20px;
+  width: 30px;
   padding-right: 10px;
 }
 .footer .contenedorFooter .subscribirse form input[type=email] {
@@ -961,10 +1106,8 @@ body {
   box-shadow: none;
   vertical-align: middle;
   font-size: 0.8rem;
-}
-.footer .contenedorFooter .subscribirse form input {
   background-color: #DFDBD8;
-  border-radius: 5px;
+  border-radius: 10px 0px 0px 10px;
 }
 .footer .contenedorFooter .subscribirse form input[type=email]::placeholder {
   color: #242424;
@@ -974,7 +1117,8 @@ body {
   color: #242424;
 }
 .footer .contenedorFooter .subscribirse form input[type=submit] {
-  background-color: #A31420;
+  height: 100%;
+  background-color: #c3000d;
   color: #EEEEEE;
   padding: 12px 20px;
   font-size: 1rem;
@@ -984,8 +1128,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.3px;
   font-weight: 400;
-  border: 0px;
-  border-radius: 5px;
+  border: 1px solid #c3000d;
+  border-radius: 0px 10px 10px 0px;
 }
 .footer .contenedorFooter .subscribirse .logoFooter {
   width: 150px;
@@ -1002,6 +1146,9 @@ body {
     margin-left: -30px;
     margin-right: 30px;
     margin-bottom: 30px;
+  }
+  .footer .contenedorFooter .subscribirse {
+    width: 96%;
   }
   .footer .contenedorFooter .subscribirse input[type=submit] {
     width: 130px;

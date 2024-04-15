@@ -1,6 +1,9 @@
 /* Estilos del main de NOSOTROS */
 .mainNosotros{
     height: auto;
+    span{
+        font-weight: 600;
+    }
     .bienbenida{
         .titulo-principal{
             color: $color-principal;

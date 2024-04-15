@@ -57,53 +57,52 @@
             margin-bottom: 30px;
         }
         .subscribirse{
+            width: 30%;
             .contacto{
                 padding-top: 60px;
                 .fa-instagram.fa-facebook{
-                    width: 20px;
+                    width: 30px;
                     padding-right: 10px;
                 }
             }
-        form{       
-            input[type="email"]{
-                padding: 0 15px;
-                max-width: $por100to;
-                width: $por100to;
-                height: 42px;
-                box-shadow: none;
-                vertical-align: middle;
-                font-size: $tipografia-0-8rem;
-              
+            form {
+                input[type="email"] {
+                    padding: 0 15px;
+                    max-width: $por100to;
+                    width: $por100to;
+                    height: 42px;
+                    box-shadow: none;
+                    vertical-align: middle;
+                    font-size: $tipografia-0-8rem;
+                    background-color: $color-botones1;
+                    border-radius: 10px 0px 0px 10px;
+            
+                    &::placeholder {
+                        color: $color-secundario;
+                    }
+            
+                    &:focus::placeholder {
+                        font-size: $tipografia-1rem;
+                        color: $color-secundario;
+                    }
+                }
+            
+                input[type="submit"] {
+                    height: $por100to;
+                    background-color: $color-btnprincipal1;
+                    color: $color-principal;
+                    padding: 12px 20px;
+                    font-size: $tipografia-1rem;
+                    line-height: 18px;
+                    vertical-align: middle;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: .3px;
+                    font-weight: 400;
+                    border: 1px solid $color-btnprincipal1;
+                    border-radius: 0px 10px 10px 0px;
+                }
             }
-            input{
-                background-color: $color-botones1;
-                border-radius: 5px;
-              }
-            input[type="email"]::placeholder{
-              color:$color-secundario;
-            }
-            input[type="email"]:focus::placeholder{
-               font-size: $tipografia-1rem;
-               color: $color-secundario;
-            }
-
-
-            input[type="submit"]{
-                background-color: $color-calzadoSuela;
-                color: $color-principal;
-                padding: 12px 20px;
-                font-size: $tipografia-1rem;
-                line-height: 18px;
-                vertical-align: middle;
-                text-align: center;
-                text-transform: uppercase;
-                letter-spacing: .3px;
-                font-weight: 400;
-                border: $pix0;
-                border-radius: 5px;
-            }
-
-        }
        
         .logoFooter{
             width: $pix100;
@@ -129,6 +128,7 @@
                 }
             }
             .subscribirse{
+                width: 96%;
                 input[type="submit"]{
                     width: 130px;
                     
