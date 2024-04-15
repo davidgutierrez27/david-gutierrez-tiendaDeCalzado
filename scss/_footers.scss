@@ -1,0 +1,137 @@
+/* Estilos del footer GENERAL */
+
+.footer{
+    padding:70px;
+    grid-area: footer;
+    background-color: $color-secundario;
+
+    .copy{
+        margin-top:30px;
+        width:38%;
+        p{ 
+            font-weight: 300;
+            font-size:$tipografia-0-8rem;
+            color:$color-botones1;
+        }
+    }
+   
+    .contenedorFooter{
+        font-size: $tipografia-1-5rem;
+        margin-bottom: 30px;
+        gap:10px;
+        .divNavg{
+            .nav1{
+                margin-right: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        a{
+            color:$color-botones1;
+            text-decoration: none;
+            &:hover{
+                color:$color-principal;
+            }
+            &:active{
+                color:$color-principal;
+            }
+
+        }
+        .htitulo{
+            padding-left: 30px;
+        }
+        h2,h3,h4{                   
+            font-style: normal;
+            font-family: $tipografia-principal;
+            font-size: $tipografia-1-5rem;
+            font-weight: 500;
+            color: $color-principal;
+            margin-bottom: 10px;
+        }
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 10px;
+            }
+        }
+        .casaCentral{
+            margin-bottom: 30px;
+        }
+        .subscribirse{
+            width: 30%;
+            .contacto{
+                padding-top: 60px;
+                .fa-instagram.fa-facebook{
+                    width: 30px;
+                    padding-right: 10px;
+                }
+            }
+            form {
+                input[type="email"] {
+                    padding: 0 15px;
+                    max-width: $por100to;
+                    width: $por100to;
+                    height: 42px;
+                    box-shadow: none;
+                    vertical-align: middle;
+                    font-size: $tipografia-0-8rem;
+                    background-color: $color-botones1;
+                    border-radius: 10px 0px 0px 10px;
+            
+                    &::placeholder {
+                        color: $color-secundario;
+                    }
+            
+                    &:focus::placeholder {
+                        font-size: $tipografia-1rem;
+                        color: $color-secundario;
+                    }
+                }
+            
+                input[type="submit"] {
+                    height: $por100to;
+                    background-color: $color-btnprincipal1;
+                    color: $color-principal;
+                    padding: 12px 20px;
+                    font-size: $tipografia-1rem;
+                    line-height: 18px;
+                    vertical-align: middle;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: .3px;
+                    font-weight: 400;
+                    border: 1px solid $color-btnprincipal1;
+                    border-radius: 0px 10px 10px 0px;
+                }
+            }
+       
+        .logoFooter{
+            width: $pix100;
+            }
+        
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .footer{
+        padding: 25px 12px 25px 25px;
+        .copy{
+            width:$por100to;           
+        }
+        .contenedorFooter{
+            
+            .divNavg{
+                .nav1{
+                    margin-left: -30px;
+                    margin-right: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+            .subscribirse{
+                width: 96%;
+                input[type="submit"]{
+                    width: 130px;
+                    
+                }
+            }
+    }   }
+}
