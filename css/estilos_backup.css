@@ -1,0 +1,1002 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Madimi+One&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400 ;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* limpieza general o algo asi */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #242424;
+    background-color: #EEEEEE;
+}
+body:-webkit-full-page-media {
+    background-color: rgba(241, 226, 226);
+}
+/* Estilos del header del index */
+.headerIndex{
+    position: fixed; 
+    width: 100%;  
+    top: 0;  
+    z-index: 1000;
+    .lineaSup{
+        background-color: #6C6761;
+    }
+    .navbar-dark.headerIndex__bgNav{
+        background-color: #242424;
+        .logo{
+            top: 17px;
+            left: 123px;
+            width: 247px;
+            margin-left: 100px;
+            margin-right: 100px;
+            }
+
+        .navbar-nav{
+            .dropdown-menu{
+                border: 0px;
+                background-color: #C6BDAE;
+                .dropdown-item{
+                    font-size: 1.2rem;
+                    color: #242424;
+                }
+                .dropdown-item:hover{
+                    font-size: 1.2rem;
+                    color: #242424;
+                    background-color: #EEEEEE;
+                }
+            }
+            .nav-link.colorAct{
+                color: #EEEEEE;
+                font-weight: 700;
+                border-bottom:1px solid #EEEEEE;
+                &:hover{
+                    color: #6C6761;
+                    border-bottom: 1px solid #6E6C69;
+                }
+            }
+            .nav-link.colorInac{
+                color: #C6BDAE;
+                &:hover{
+                    color: #EEEEEE;
+                    border-bottom: 1px solid #6C6761;
+                }
+            }   
+        }
+    
+    }
+}
+
+
+.bordesLateralesMain{   
+    padding-right: 125px;
+    padding-left: 125px;
+}
+@media screen and (max-width: 768px){
+    .bordesLateralesMain{
+        padding-right: 10px;
+        padding-left: 10px;
+    }       
+}
+
+/* Estilos del main del index */
+.mainIndex{
+
+    /* Estilos del carousel */
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                height: 100vh;
+
+                .carousel-item img{
+                    height: 100%;
+                    object-fit: cover;               
+                }
+                .carousel-caption {
+                    left: 15%;
+                    width: 100%;
+                  }
+                .titulo-principal1, .titulo-principal2{
+                    font-family: "Madimi One", sans-serif;
+                    font-weight: 700;
+                    font-size: 7rem;
+                    margin-top: 140px;
+                    color: #242424;
+                    text-align: start;
+                    width: 600px;
+                }
+                .titulo-principal3{
+                    font-family: "Madimi One", sans-serif;
+                    font-weight: 700;
+                    font-size: 7rem;
+                    margin-top: 140px;
+                    color: #C6BDAE;
+                    text-align: start;
+                    width: 600px;
+                }
+
+                .btn-primary1 {
+                    color: #EEEEEE;                   
+                    background-color: #3D3C38;
+                    width: 300px;
+                    padding: 10px 20px;
+                    margin-top: 50px;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    border-radius: .625rem;
+                }
+                .btn-primary1:hover {
+                    color: #EEEEEE;
+                    background-color: #6C6761;
+                }
+
+                .btn-primary2 {
+                    color: #EEEEEE;                   
+                    background-color: #BA8060;
+                    width: 300px;
+                    padding: 10px 20px;
+                    margin-top: 50px;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    border-radius: .625rem;
+                }
+                .btn-primary2:hover {
+                    color: #EEEEEE;
+                    background-color: #242424;
+                }
+
+                .btn-primary3 {
+                    color: #242424;                   
+                    background-color: #F6F5F0;
+                    width: 300px;
+                    padding: 10px 20px;
+                    margin-top: 50px;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    border-radius: .625rem;
+                }
+                .btn-primary3:hover {
+                    color: #EEEEEE;
+                    background-color: #C6BDAE;
+                }
+
+                @media screen and (max-width: 768px){
+                    .carousel-caption {
+                        left: 0%;
+                    }                       
+                    .titulo-principal1, .titulo-principal2, .titulo-principal3{
+                        width: 90%;
+                        font-weight: 500;
+                        font-size: 3rem;
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+                    .btn-primary1.btn-primary1.btn-primary3{
+                        width: 300px;
+                        text-align: center;
+                        font-size: 2rem;                       
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        font-weight: 400;
+                        border-radius: .625rem;
+                    } 
+                }                                       
+            }
+        }
+    }
+
+
+    /* Estilos del lOS ICONOS */
+    .seccionIconos{
+        padding-right: 125px;
+        padding-left: 125px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .card{
+            background-color: #EEEEEE;
+            width: 300px;
+            border: 0px;
+            .row{
+                .col22{
+                    padding-top: 10px;
+                    width: 60px; 
+                }
+                .col23{
+                    padding-left: 10px;
+                    h5{ 
+                        font-style: normal;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        color: #242424;         
+                    }
+                    p{
+                        margin-top: -5px;
+                        font-size: 1rem;
+                        font-weight: 200;
+                        color: #242424;
+                        
+                        } 
+                }
+            }           
+        }
+    } 
+    @media screen and (max-width: 768px){
+        .seccionIconos{
+            
+            padding-right: 125px;
+            padding-left: 125px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .card{
+                width: 100%;
+                .row{
+                    .col22{
+                        margin-bottom: 10px;
+                        width: 50px; 
+                    }
+                    .col23{
+                        h5{
+                            font-size: 1rem;        
+                        }
+                        p{
+                            font-size: 0.8rem;
+                            
+                        } 
+                    }
+                }           
+            }
+        }   
+    }
+
+
+    /* Estilos del las 2 Cads primcipales */
+    .cardsPrincipal{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .card{
+            background: none;
+            border: 0px;
+            .card-img{ 
+                border-radius: 24px;
+            }
+            .card-img-overlay{
+                width: 45vh;
+                .card-title{
+                    font-family: "Madimi One", sans-serif;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    color: #EEEEEE;
+                }
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 350;
+                    color:#C6BDAE;
+                }
+                .btn-primary {
+                    color: #242424;
+                    background-color: #C6BDAE;
+                    border: 0px;
+                    width: 250px;
+                    font-size: 1.3rem;                 
+                    text-align: center;
+                }
+                    .btn-primary:hover {
+                    color: #242424;
+                    background-color: #EEEEEE;
+    
+                }           
+                                
+            }
+                
+        }        
+    }
+    @media screen and (max-width: 768px){
+        .cardsPrincipal{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .card{
+                .card-img-overlay{
+                    width: 100%;
+                    .btn-primary {
+                        width: 160px;
+                        font-size: 0.8rem;
+                    }         
+                                    
+                }
+                    
+            }        
+        }
+    }
+
+
+    
+    .opiniones{
+        margin-top: 100px;
+        h3{
+            font-family: "Madimi One", sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+            color: #242424;
+        }
+        .container-fluid{
+            .align-items-center{
+                .col-md-4{
+                    .cardOpiniones {
+                        height: auto;
+                        background-color: #F4F1EA;
+                        border: 1px solid #e7e3d9;
+                        border-radius: 24px;
+                        margin: 50px 5px;
+                        padding: 25px 0px 15px 0px;
+                    
+                        .imgOpiniones {
+                            width: 25%;
+                            height: 25%;
+                            margin-top: -55px;
+                        }
+                        .card-body{
+                            height: 350px;
+                            .tituloOpiniones {
+                                font-size: 1.7rem;
+                                color: #242424;
+                                font-family: "Madimi One", sans-serif;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                            }
+                            .subtituloOpiniones {
+                                font-size: 1.2rem;
+                                color: #242424;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                            }
+                            .txtOpiniones {
+                                font-size: 1rem;
+                                color: #242424;
+                                font-weight: 500;
+                                text-align: left;
+                                margin-top: 20px;
+                                padding: 20px;
+                                margin-bottom: 10px;
+                            }
+                
+                        }
+            
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .opiniones{
+            margin-top: 100px;
+            h3{
+                font-family: "Madimi One", sans-serif;
+                font-size: 2rem;
+                font-weight: 500;
+                color: #242424;
+            }
+            .container-fluid{
+                .align-items-center{
+                    .col-md-4{
+                        .cardOpiniones {
+                            height: auto;
+                            background-color: #F4F1EA;
+                            border: 1px solid #e7e3d9;
+                            border-radius: 24px;
+                            margin: 50px 5px;
+                            padding: 25px 0px 15px 0px;
+                        
+                            .card-body{
+                                height: 273px;
+                                .tituloOpiniones {
+                                    font-size: 1.2rem;
+                                    margin-top: 5px;
+                                    margin-bottom: 5px;
+                                }
+                                .subtituloOpiniones {
+                                    font-size: 1rem;
+                                    margin-top: 5px;
+                                    margin-bottom: 5px;
+                                }
+                                .txtOpiniones {
+                                    font-size: 0.8rem;
+                                    margin-top: 10px;
+                                    padding: 10px;
+                                    margin-bottom: 5px;
+                                }
+                    
+                            }
+                
+                        }
+                    }
+                }
+            }
+        }    
+    }
+    
+}
+    
+
+
+
+
+/* Estilos del header del la seccion MasVendidas */
+
+.seccionMasVendidas{
+    top: 100px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-right: -12px;
+    .titulo{
+        font-family: "Madimi One", sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #242424;
+    } 
+    .masVendidas{
+        display: grid;
+        grid-template-columns: 4.5fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "G 1 2";
+    }
+    .imgGrande{
+        margin-left: -24px;
+        grid-area: "G";
+        background-color: #F4F1EA;
+        border-radius: 24px;
+        img{
+            border: 0px;
+            border-radius: 24px;
+            }
+    }
+    .cards1{
+        grid-area: "1";
+    }
+    .cards2{
+        grid-area: "2";
+    } 
+    .d-flex{
+        .card{
+            border: 0px;
+            border-radius: 24px;
+            background-color: #FBF8F1;
+            .card-img-top{
+                border: 0px;
+                border-radius: 24px;
+            }
+            .card-body{
+                font-size:1rem;
+                border-radius: 24px;
+                background: linear-gradient(to bottom, #F4F1EA, #E0DFD7);
+                .card-title{
+                    color: #242424;
+                }
+                .card-subtitle{
+                    color: #242424;
+                    
+                    font-size: 0.9;
+                }
+                .card-text{
+                    color: #6C6761;
+                    
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .seccionMasVendidas{
+        margin-right: initial;
+    }
+}
+
+/* Estilos del header del la seccion Urbano */
+.seccionUrbano{
+    top: 100px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    .titulo{
+        font-family: "Madimi One", sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #242424;
+    } 
+    .d-flex{
+        .card{
+            width: 30.7vh;
+            border: 0px;
+            border-radius: 24px;
+            background-color: #FBF8F1;
+            .card-img-top{
+                border: 0px;
+                border-radius: 24px;
+            }
+            .card-body{
+                border-radius: 24px;
+                background: linear-gradient(to bottom, #fdfbf5, #E0DFD7);
+                .card-title{
+                    color: #242424;
+                }
+                .card-subtitle{
+                    color: #242424;
+                }
+                .card-text{
+                    color: #6C6761;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .seccionUrbano{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+        .d-flex{
+            .card{
+                width: 46%;
+            }
+            .card-body{
+                .card-title{
+                font-size:1rem;
+                }
+                .card-subtitle{
+                    font-size: 0.9;
+                }
+                .card-text{
+                    font-size: .8rem;
+                }
+             }
+        }
+    }
+}
+
+
+/* Estilos del main del HOMBRE-MUJER */
+.mainHombre{
+    .bienbenida{
+        margin-top: 125px;
+        .titulo-principal{
+            font-family: "Madimi One", sans-serif;
+            font-weight: 700;
+            font-size: 7rem;
+            color: #242424;
+            width: 600px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .bienbenida{
+            margin-top: 150px;
+            margin-bottom: 30px;
+            .titulo-principal{
+                margin-top: 70px;
+                font-size: 2rem;
+            }
+        }
+    } 
+}
+
+/* Estilos del grilla */
+.grillaMain{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "acordeon productos"
+                        "acordeon productos";
+}
+@media screen and (max-width: 768px){
+    .grillaMain{
+        display: block;
+    }  
+}
+
+/* Estilos del Acordeon */
+.acordeon{
+    grid-area: acordeon;
+    margin-top: -20px;
+    .titulo{
+        font-family: "Madimi One", sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #242424;
+    }
+    padding:20px;
+    .accordion-item{
+        background-color:#EEEEEE;
+        border: 0px;
+        .accordion-button{
+            font-family: "Madimi One", sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: #242424;
+        }
+        .accordion-button{
+            background-color: #EEEEEE;
+        }
+        .accordion-button:not(.collapsed){
+            background-color: #C6BDAE;
+        }
+        .accordion-body{
+            color: #242424;
+        }
+        
+    }
+    
+    /* Estilos del Productos */
+    .seccionUrbano{
+        grid-area: productos;
+        justify-content: center;
+    }
+}
+
+
+/* Estilos del main del Primavera Verano */
+.mainPrimaveraVerano{
+    .bienbenida{
+        margin-top: 125px;
+        .titulo-principal{
+            font-family: "Madimi One", sans-serif;
+            font-weight: 700;
+            font-size: 7rem;
+            color: #242424;
+            width: 600px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .bienbenida{
+            margin-top: 150px;
+            margin-bottom: 30px;
+            .titulo-principal{
+                margin-top: 70px;
+                font-size: 2rem;
+            }
+        }
+    }
+    .seccionMasVendidas{
+        top: 100px;
+        width: 100%;
+        margin-bottom: 100px;
+        .titulo{
+            font-family: "Madimi One", sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+            color: #242424;
+        } 
+        .d-flex{
+            .card{
+                width: 40vh;
+                border: 0px;
+                border-radius: 24px;
+                background-color: #FBF8F1;
+                .card-img-top{
+                    border: 0px;
+                    border-radius: 24px;
+                }
+                .card-body{
+                    border-radius: 24px;
+                    background-color: #FBF8F1;
+                    .card-title{
+                        color: #242424;
+                    }
+                    .card-subtitle{
+                        color: #242424;
+                    }
+                    .card-text{
+                        color: #6C6761;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .mainPrimaveraVerano{
+            .seccionUrbano{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                
+                .d-flex{
+                    .card{
+                        width: 47%;
+                    }
+                    .card-body{
+                        .card-title{
+                        font-size:1rem;
+                        }
+                        .card-subtitle{
+                            font-size: 0.9;
+                        }
+                        .card-text{
+                            font-size: .8rem;
+                        }
+                        }
+                }
+                
+            }
+            .seccionMasVendidas{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                }
+                .d-flex{
+                    .card{
+                        width: initial;
+                    }
+                }
+                .card-body{
+                    .card-title{
+                        font-size:1.2rem;
+                }
+                .card-subtitle{
+                    font-size: 1;
+                    color: #242424;
+                }
+                .card-text{
+                    font-size: .9rem;
+                    color: #242424;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Estilos del main de NOSOTROS */
+.mainNosotros{
+    height: auto;
+    .bienbenida{
+        margin-top: 125px;
+        .titulo-principal{
+            font-family: "Madimi One", sans-serif;
+            font-weight: 700;
+            font-size: 7rem;
+            color: #EEEEEE;
+            width: 600px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .bienbenida{
+            margin-top: 150px;
+            margin-bottom: 30px;
+            .titulo-principal{
+                margin-top: 70px;
+                font-size: 2rem;
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .bienbenida{
+            margin-bottom: 30px;
+            .titulo-principal{
+                margin-top: 50px;
+                font-size: 2rem;
+            }
+        }
+    }
+    .historia1{
+        margin-bottom: 100px;
+        height: 45vh;
+        width: 100%;
+        .imagen{
+            height: 100%;
+            img{
+                height: 100%;
+                width: auto;
+                border-radius: 24px;
+            }
+        }
+        .texto{
+            height: 100%;
+            color: #242424;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .historia1{
+            height: auto;
+            .imagen{
+                margin-bottom: 30px;
+                img{
+                    height: auto;
+                    width: 100%;
+                }
+            }
+            .texto{
+                height: 100%;
+                color: #242424;
+            }
+        } 
+    }
+    .video{
+        margin-top: 200px;
+        margin-bottom: 200px;
+        width: 48%;
+        height: auto;
+        .videoI{
+            height:auto;
+            width: 100%;
+            iframe{
+                height: 500px;
+                width: 100%;
+                border-radius: 24px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .video{
+            margin-top: initial;
+            margin-bottom: 60px;
+            width: 100%;
+            .videoI{
+                iframe{
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos del footer GENERAL */
+
+.footer{
+    padding:70px;
+    grid-area: footer;
+    background-color: #242424;
+
+    .copy{
+        margin-top:30px;
+        width:38%;
+        p{ 
+            font-weight: 300;
+            font-size:0.8rem;
+            color:#C6BDAE;
+        }
+    }
+   
+    .contenedorFooter{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        gap:10px;
+        .divNavg{
+            .nav1{
+                margin-right: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        a{
+            color:#C6BDAE;
+            text-decoration: none;
+            &:hover{
+                color:#EEEEEE;
+            }
+            &:active{
+                color:#EEEEEE;
+            }
+
+        }
+        .htitulo{
+            padding-left: 30px;
+        }
+        h2,h3,h4{                   
+            font-style: normal;
+            font-family: "Madimi One", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #EEEEEE;
+            margin-bottom: 10px;
+        }
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 10px;
+            }
+        }
+        .casaCentral{
+            margin-bottom: 30px;
+        }
+        .subscribirse{
+            .contacto{
+                padding-top: 60px;
+                .fa-instagram.fa-facebook{
+                    width: 20px;
+                    padding-right: 10px;
+                }
+            }
+        form{       
+            input[type="email"]{
+                padding: 0 15px;
+                max-width: 100%;
+                width: 100%;
+                height: 42px;
+                box-shadow: none;
+                vertical-align: middle;
+                font-size: 0.8rem;
+              
+            }
+            input{
+                background-color: #C6BDAE;
+                border-radius: 5px;
+              }
+            input[type="email"]::placeholder{
+              color:#6C6761;
+            }
+            input[type="email"]:focus::placeholder{
+               font-size: 1rem;
+               color: #242424;
+            }
+
+
+            input[type="submit"]{
+                background-color: #BA8060;
+                color: white;
+                padding: 12px 20px;
+                font-size: 1rem;
+                line-height: 18px;
+                vertical-align: middle;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: .3px;
+                font-weight: 400;
+                border: 0px;
+                border-radius: 5px;            }
+
+        }
+       
+        .logoFooter{
+            width: 100px;
+        }
+        
+    }
+  
+}
+}
+@media screen and (max-width: 768px){
+    .footer{
+        padding: 25px 12px 25px 25px;
+        .copy{
+            width:100%;           
+        }
+        .contenedorFooter{
+            
+            .divNavg{
+                .nav1{
+                    margin-left: -30px;
+                    margin-right: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+            .subscribirse{
+                input[type="submit"]{
+                    width: 130px;
+                    
+                }
+            }
+    }   }
+}
