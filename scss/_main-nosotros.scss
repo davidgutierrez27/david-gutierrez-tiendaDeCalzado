@@ -1,0 +1,70 @@
+/* Estilos del main de NOSOTROS */
+.mainNosotros{
+    height: auto;
+    span{
+        font-weight: 600;
+    }
+    .bienbenida{
+        .titulo-principal{
+            color: $color-principal;
+        }
+        .subtitulo{
+            color: $color-cardtexto1;
+        }
+    }
+
+
+    .historia1{
+        margin-bottom: $pix100;
+        height: 45vh;
+        .imagen{
+            img{
+                width: auto;
+                border-radius: 24px;
+            }
+        }
+        .texto{
+            color: $color-secundario;
+            p{
+                margin: 20px 0px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .historia1{
+            height: auto;
+            .imagen{
+                margin-bottom: 30px;
+                img{
+                    height: auto;
+                    width: $por100to;
+                }
+            }
+        } 
+    }
+    .video{
+        margin-top: 200px;
+        margin-bottom: 200px;
+        width: 48%;
+        height: auto;
+        .videoI{
+            height:auto;
+            iframe{
+                height: 500px;
+                border-radius: 24px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .video{
+            margin-top: initial;
+            margin-bottom: 60px;
+            width: $por100to;
+            .videoI{
+                iframe{
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
