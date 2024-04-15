@@ -1,49 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calzado Urbano</title>
+        <meta name="description" content="Tienda de calzado urbano en Palermo, Buenos Aires. Amplia selección de zapatillas y botas para hombres y mujeres. ¡Comprá ahora con Envío Gratis a todo el Pais!">
+        <meta name="keywords" content="calzado urbano, zapatillas urbanas, Calzado para Hombres, Calzado para Mujeres botas, moda urbana, tendencias de calzado, Palermo, Buenos Aires">
+        <title>Calzado Urbano | Tienda de Calzado Urbano</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./css/estilos.css">
         <script src="https://kit.fontawesome.com/e048560479.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/estilosCalzadoUrbano.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Madimi+One&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="header">
-            <a class="padreDelLogo" href="#">
-                <img src="./assets/img/logo.png" alt="logo principal" loading="lazy" class="logo-principal">
-            </a>
-            <nav>
-                <ul class="lista-nav">
-                    <li class="lista-item">
-                        <a class="link-nav" href="#">INICIO</a>
-                    </li>
-                    <li class="lista-item">
-                        <a class="link-nav" href="./pages/hombres.html">HOMBRES</a>
-                    </li>
-                    <li class="lista-item">
-                        <a class="link-nav" href="./pages/mujeres.html">MUJERES</a>
-                    </li>
-                    <li class="lista-item">
-                        <a class="link-nav" href="./pages/marcas.html">MARCAS</a>
-                    </li>
-                    <li class="lista-item">
-                        <a class="link-nav" href="./pages/sobrenosotros.html">SOBRE NOSOTROS</a>
-                    </li>
-                </ul>
-            </nav>
+        <header class="headerIndex w-100">
+
+            <!--linea superrior negra #333333-->
+            <section class="lineaSup d-none d-md-block">
+            </section>
+
+            <!--barra de navegacion resposiva-->
+            <nav class="navbar navbar-expand-lg navbar-dark headerIndex__bgNav">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.png" alt="logo principal" class="logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end fs-4 gap-3">
+                      <li class="nav-item">
+                        <a class="nav-link active colorAct" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorInac" href="./pages/hombres.html">Hombres</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorInac" href="./pages/mujeres.html">Mujeres</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link colorInac dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Colecciones</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./pages/primaveraverano.html">Primavera Verano</a></li>
+                          <li><a class="dropdown-item" href="./pages/otoñoinvierno.html">Otoño Invierno</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorInac" href="./pages/sobrenosotros.html">Nosotros</a>
+                      </li>
+                    </ul>                  
+                  </div>
+                </div>
+              </nav>
         </header>
-<<<<<<< HEAD
-        <main class="main-index">
-            <section class="section-principal">
-                <h1 class="titulo-principal">EXPRESA TU ESTILO<br>
-                <samp class="grosor-menor">sin decir una palabra.</samp></h1>
-                <br>
-                <p class="section-principal-p">Descubre las tendencias más recientes en calzado urbano.<br> la tienda más cercana y sumérgete en nuestra colección para caminar con actitud por las calles de la ciudad.<br>
-                   ¡Porque tu estilo habla por ti, elige con confianza!
-                </p>
-                <a class="link-encontranos" href="#footer">Encontranos</a>
-=======
 
         
         <main class="mainIndex">
@@ -94,198 +106,383 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
->>>>>>> feature/preEntregaFinal
             </section>
-            <section class="section-tarjetasProductos">
-                <h2 class="nuestos-productos">NUESTROS PRODUCTOS</h2>
-                <section class="section-catalogo">
-                    <img class="section-catalogoImg" src="./assets/img/catalogo.jpg" alt="Nuestros productos" loading="lazy">
-                    <h3 class="section-catalogoSub">CATALOGO</h3>
-                </section>
-                <div class="tarjetasProductosDiv">
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/hombres/img_59781-731bda78ee92d3cf5e16844225150652-480-0.webp" alt="">                   
-                        <h4 class="tarjetasProductos-subtitulo">
-                            ZAPATILLAS DIOR HOMME (BLANCAS)
-                            $109.088,00 $114.048,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/hombres/img_522711-734b7636ef205477bf16936088272341-640-0.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            JORDAN RETRO 1 CHAROL
-                            $150.088,00 $182.160,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/hombres/0b72708a-6d78-4056-a545-8b0df2d24c321-165d9e92de4dac975016716501703636-640-0.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            AIR CHUNKY (BLANCA Y NEGRA)
-                            $150.088,00 $182.160,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/hombres/16336883991e9fc169224f23df394716310f8d6724_thumbnail_900x.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            AIR CHUNKY (COLOR COMBINADO)
-                            $209.088,00 $230.048,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/hombres/img_52211-aeada898df9d76953b16936025903654-640-0.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            AIR JORDAN 1 RETRO LOW OG UNC (CELESTE)
-                            $150.088,00 $182.160,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/mujer/1111.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            ZAPATILLAS DIOR HOMME (BLANCAS)
-                            $109.088,00 $114.048,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/mujer/2222.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            JORDAN RETRO 1 CHAROL
-                            $150.088,00 $182.160,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/mujer/3333.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            AIR CHUNKY (BLANCA Y NEGRA)
-                            $150.088,00 $182.160,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/mujer/4444.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            AIR CHUNKY (COLOR COMBINADO)
-                            $209.088,00 $230.048,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/mujer/5555.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            AIR JORDAN 1 RETRO LOW OG UNC (CELESTE)
-                            $150.088,00 $182.160,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/hombres/img_52211-aeada898df9d76953b16936025903654-640-0.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            AIR JORDAN 1 RETRO LOW OG UNC (CELESTE)
-                            $150.088,00 $182.160,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/mujer/1111.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            ZAPATILLAS DIOR HOMME (BLANCAS)
-                            $109.088,00 $114.048,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/mujer/2222.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            JORDAN RETRO 1 CHAROL
-                            $150.088,00 $182.160,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/mujer/3333.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            AIR CHUNKY (BLANCA Y NEGRA)
-                            $150.088,00 $182.160,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/mujer/4444.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            AIR CHUNKY (COLOR COMBINADO)
-                            $209.088,00 $230.048,00
-                        </h4>
-                    </section>
-                    <section class="tarjetasProductos">
-                        <img class="tarjetasProductos-img" src="./assets/img/mujer/5555.webp" alt="">
-                        <h4 class="tarjetasProductos-subtitulo">
-                            AIR JORDAN 1 RETRO LOW OG UNC (CELESTE)
-                            $150.088,00 $182.160,00
-                        </h4>
-                    </section>
+
+
+
+
+          <section class="bordesLateralesMain">
+
+            <!--Iconos escritorio y mobile-->
+            <section class="container-fluid seccionIconos flex-wrap d-flex justify-content-between">
+              <div class="card mb-3 col-6 col-md-none">
+                <div class="row justify-content-center">
+                  <div class="col22">
+                    <img src="./assets/img/carro.png" class="w-100" alt="1icono de la seccion iconos">
+                  </div>
+                  <div class="col23 text-center text-md-start col-md-8">
+                      <h5>Envíos a todo el país</h5>
+                      <p>Envíos a todo el país a través de Andreani.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3 col-6 col-md-none">
+                <div class="row justify-content-center">
+                  <div class="col22">
+                    <img src="./assets/img/garantia.png" class="w-100" alt="2icono de la seccion iconos">
+                  </div>
+                  <div class="col23 text-center text-md-start col-md-8">
+                      <h5>Garantía legal 3 meses</h5>
+                      <p>Garantía de devolución de dinero.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3 col-6 col-md-none">
+                <div class="row justify-content-center">
+                  <div class="col22">
+                    <img src="./assets/img/cartera.png" class="w-100" alt="3icono de la seccion iconos">
+                  </div>
+                  <div class="col23 text-center text-md-start col-md-8">
+                      <h5>Pago seguro</h5>
+                      <p>Nos aseguramos del 100% pago seguro.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3 col-6 col-md-none">
+                <div class="row justify-content-center">
+                  <div class="col22">
+                    <img src="./assets/img/servicio-a-lcliente.png" class="w-100" alt="4icono de la seccion iconos">
+                  </div>
+                  <div class="col23 text-center text-md-start col-md-8">
+                      <h5>Soporte 24/7</h5>
+                      <p>Nuestro equipo soporte está disponible 24 horas.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            
+            <!--2 cards principales de escritorio y mobile-->
+            <section class=" container-fluid cardsPrincipal">
+
+              <section class="hombreMujer">
+                <div class="row gap-4 gap-md-0 ">
+                  <a href="./pages/hombres.html" class="col-12 col-md-6 card">
+                    <img src="./assets/img/deportivos.png" class="shadow" alt="card Hombre">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <h3 class="card-title">Hombres</h3>
+                        <p>¡Explora la colección!</p>
+                    </div>
+                  </a>
+                  <a href="./pages/mujeres.html" class="col-12 col-md-6 card">
+                    <img src="./assets/img/casual.png" class="shadow" alt="card Mujeres">
+                    <div class="card-img-overlay d-flex flex-column">
+                        <h3 class="card-title">Mujeres</h3>
+                        <p>¡Explora la colección!</p>
+                    </div>
+                  </a>
+                </div>
+              </section>
+              
+            </section>
+
+
+            <!--Seccion mas vendidas-->
+            <section class="seccionMasVendidas1 container-fluid">
+              <h2 class="text-center mb-4 titulo">Popular</h2>
+              <section class="d-flex justify-content-center align-items-center">
+                <div class="shadow tarjata">
+                    <a href="./pages/404.html">
+                        <img src="./assets/img/las-mas-vendidas/grande.png" class="cardImg" alt="Card Zapatillas1">
+                    
+                      <div class="card-img-overlay d-flex flex-column">
+                        <h3 class="card-title1">Más vendidas</h3>
+                        <p class="parrafo">¡Explora la colección!</p>
+                      </div>
+                    </a>
+                    <div class="card-body d-flex">
+                      <div class="card-texto d-flex flex-column justify-content-center">              
+                        <h6 class="card-subtitle mb-2">XIZOU WUITE / RED / BEIGE</h6>
+                        <h5 class="card-title"><b>$89.999,00</b></h5>
+                        <p class="card-text">3 cuotas sin interés de <b>$29.999,67</b><br>Hasta 4 cuotas SIN interés con tarjeta de DÉBITO</p>           
+                      </div>
+                      <div class="pequeñas-imagenes justify-content-end align-items-center d-none d-md-flex">
+                        <img src="./assets/img/las-mas-vendidas/11.png" class="imgPeque" alt="Opción 1">
+                        <img src="./assets/img/las-mas-vendidas/22.png" class="imgPeque" alt="Opción 2">
+                        <img src="./assets/img/las-mas-vendidas/33.png" class="imgPeque" alt="Opción 1">
+                        <img src="./assets/img/las-mas-vendidas/44.png" class="imgPeque" alt="Opción 2">
+                      </div>
+                    </div>
+                </div>
+              </section>
+            </section>
+            
+
+
+            <!--Seccion Urbano-->
+            <section class="seccionUrbano container-fluid">
+              <h2 class="text-center mb-4 titulo">Nueva Temporada</h2>
+              <section class="d-flex flex-wrap justify-content-center justify-content-md-between gap-4">
+                
+                <div class="shadow card">
+                    <a href="./pages/404.html">
+                        <img id="main-image" src="./assets/img/hombres/11.jpg" class="card-img-top" alt="Card Zapatillas1">
+                    </a>
+                    <div class="card-body">
+                        <div class="pequeñas-imagenes">
+                          <img src="./assets/img/opciones/zapatilla1/1.png" class="imgPeque" alt="Opción 1">
+                          <img src="./assets/img/opciones/zapatilla1/2.png" class="imgPeque" alt="Opción 2">
+                        </div>               
+                        <h6 class="card-subtitle mb-2">ROCKET</h6>
+                        <h5 class="card-title"><b>$109.999,00</b></h5>
+                        <p class="card-text">3 cuotas sin interés de <b>$39.999,97</b><br>Hasta 4 cuotas SIN interés con tarjeta de DÉBITO</p>           
+                    </div>
+                </div>
+                
+                <div class= "shadow-sm card">
+                  <a href="./pages/404.html">
+                  <img src="./assets/img/nueva-temporada/22.jpg" class="card-img-top" alt="Card Zapatillas2">
+                  </a>
+                  <div class="card-body">
+                    <div class="pequeñas-imagenes">
+                        <img src="./assets/img/opciones/zapatilla2/1.png" class="imgPeque" alt="zapatilla2 Opción 1">
+                        <img src="./assets/img/opciones/zapatilla2/2.png" class="imgPeque" alt="zapatilla2 Opción 2">
+                      </div>                    
+                    <h6 class="card-subtitle">MINICHION</h6>
+                    <h5 class="card-title"><b>$79.999,00</b></h5>
+                    <p class="card-text">3 cuotas sin interés de <b>$25.999,67</b><br>Hasta 4 cuotas SIN interés con tarjeta de DÉBITO</p>
+                  </div>
+                </div>
+
+                <div class="shadow-sm card">
+                  <a href="./pages/404.html">
+                  <img src="./assets/img/nueva-temporada/33.jpg" class="card-img-top" alt="Card Zapatillas3">
+                  </a>
+                  <div class="card-body">
+                    <div class="pequeñas-imagenes">
+                        <img src="./assets/img/opciones/zapatilla3/1.png" class="imgPeque" alt="zapatilla3 Opción 1">
+                        <img src="./assets/img/opciones/zapatilla3/2.png" class="imgPeque" alt="zapatilla3 Opción 2">
+                        <img src="./assets/img/opciones/zapatilla3/3.png" class="imgPeque" alt="zapatilla3 Opción 3">
+                    </div>                    
+                    <h6 class="card-subtitle">FASHION SPORT</h6>
+                    <h5 class="card-title"><b>$95.999,00</b></h5>
+                    <p class="card-text">3 cuotas sin interés de <b>$32.999,77</b><br>Hasta 4 cuotas SIN interés con tarjeta de DÉBITO</p>
+                  </div>
+                </div>
+
+                <div class="shadow-sm card">
+                  <a href="./pages/404.html">
+                  <img src="./assets/img/nueva-temporada/44.jpg" class="card-img-top" alt="Card Zapatillas4">
+                  </a>
+                  <div class="card-body">
+                    <div class="pequeñas-imagenes">
+                        <img src="./assets/img/opciones/zapatilla4/1.png" class="imgPeque" alt="zapatilla4 Opción 1">
+                        <img src="./assets/img/opciones/zapatilla4/2.png" class="imgPeque" alt="zapatilla4 Opción 2">
+                        <img src="./assets/img/opciones/zapatilla4/3.png" class="imgPeque" alt="zapatilla4 Opción 3">
+                      </div>                    
+                    <h6 class="card-subtitle">TSIODFO Springblade</h6>
+                    <h5 class="card-title"><b>$79.999,00</b></h5>
+                    <p class="card-text">3 cuaotas sin interés de <b>$25.999,00</b><br>Hasta 4 cuotas SIN interés con tarjeta de DÉBITO</p>
+                  </div>
+                </div>
+
+                <div class="shadow-sm card">
+                  <a href="./pages/404.html">
+                  <img src="./assets/img/nueva-temporada/55.jpg" class="card-img-top" alt="Card Zapatillas5">
+                  </a>
+                  <div class="card-body">
+                    <div class="pequeñas-imagenes">
+                      <img src="./assets/img/opciones/zapatilla5/1.png" class="imgPeque" alt="zapatilla5 Opción 1">
+                      <img src="./assets/img/opciones/zapatilla5/2.png" class="imgPeque" alt="zapatilla5 Opción 2">
+                      <img src="./assets/img/opciones/zapatilla5/3.png" class="imgPeque" alt="zapatilla5 Opción 3">
+                    </div>                    
+                    <h6 class="card-subtitle">TSIODFO Athletic</h6>
+                    <h5 class="card-title"><b>$79.999,00</b></h5>
+                    <p class="card-text">3 cuotas sin interés de <b>$25.999,00</b><br>Hasta 4 cuotas SIN interés con tarjeta de DÉBITO</p>
+                  </div>
+                </div>
+
+
+                <div class="shadow-sm card">
+                  <a href="./pages/404.html">
+                  <img src="./assets/img/nueva-temporada/66.jpg" class="card-img-top" alt="Card Zapatillas6">
+                  </a>
+                  <div class="card-body">
+                    <div class="pequeñas-imagenes">
+                      <img src="./assets/img/opciones/zapatilla6/1.png" class="imgPeque" alt="zapatilla6 Opción 1">
+                      <img src="./assets/img/opciones/zapatilla6/2.png" class="imgPeque" alt="zapatilla6 Opción 2">
+                      <img src="./assets/img/opciones/zapatilla6/3.png" class="imgPeque" alt="zapatilla6 Opción 3">
+                    </div>                    
+                    <h6 class="card-subtitle">BLADE RVUAT</h6>
+                    <h5 class="card-title"><b>$129.999,00</b></h5>
+                    <p class="card-text">3 cuotas sin interés de <b>$49.999,67</b><br>Hasta 4 cuotas SIN interés con tarjeta de DÉBITO</p>
+                  </div>
+                </div>
+                
+                <div class="shadow-sm card">
+                  <a href="./pages/404.html">
+                  <img src="./assets/img/nueva-temporada/77.jpg" class="card-img-top" alt="Card Zapatillas7">
+                  </a>
+                  <div class="card-body">
+                    <div class="pequeñas-imagenes">
+                      <img src="./assets/img/opciones/zapatilla7/1.png" class="imgPeque" alt="zapatilla7 Opción 1">
+                      <img src="./assets/img/opciones/zapatilla7/2.png" class="imgPeque" alt="zapatilla7 Opción 2">
+                      </div>                    
+                    <h6 class="card-subtitle">Gaon 05</h6>
+                    <h5 class="card-title"><b>$149.999,00</b></h5>
+                    <p class="card-text">3 cuotas sin interés de <b>$57.999,67</b><br>Hasta 4 cuotas SIN interés con tarjeta de DÉBITO</p>
+                  </div>
+                </div>
+
+                <div class="shadow-sm card">
+                  <a href="./pages/404.html">
+                  <img src="./assets/img/nueva-temporada/88.jpg" class="card-img-top" alt="Card Zapatillas8">
+                  </a>
+                  <div class="card-body">
+                    <div class="pequeñas-imagenes">
+                      <img src="./assets/img/opciones/zapatilla8/1.png" class="imgPeque" alt="zapatilla8 Opción 1">
+                      <img src="./assets/img/opciones/zapatilla8/2.png" class="imgPeque" alt="zapatilla8 Opción 2">
+                    </div>                    
+                    <h6 class="card-subtitle">NANJUM 2025</h6>
+                    <h5 class="card-title"><b>$149.999,00</b></h5>
+                    <p class="card-text">3 cuotas sin interés de <b>$57.999,67</b><br>Hasta 4 cuotas SIN interés con tarjeta de DÉBITO</p>
+                  </div>
+                </div>
+
+                <div class="shadow-sm card">
+                  <a href="./pages/404.html">
+                  <img src="./assets/img/nueva-temporada/99.jpg" class="card-img-top" alt="Card Zapatillas9">
+                  </a>
+                  <div class="card-body">
+                    <div class="pequeñas-imagenes">
+                      <img src="./assets/img/opciones/zapatilla9/1.png" class="imgPeque" alt="zapatilla9 Opción 1">
+                      <img src="./assets/img/opciones/zapatilla9/2.png" class="imgPeque" alt="zapatilla9 Opción 2">
+                      </div>                    
+                    <h6 class="card-subtitle">NANJUM 2025</h6>
+                    <h5 class="card-title"><b>$149.999,00</b></h5>
+                    <p class="card-text">3 cuotas sin interés de <b>$57.999,67</b><br>Hasta 4 cuotas SIN interés con tarjeta de DÉBITO</p>
+                  </div>
+                </div>
+
+                <div class="shadow-sm card">
+                  <a href="./pages/404.html">
+                  <img src="./assets/img/nueva-temporada/10.jpg" class="card-img-top" alt="Card Zapatillas10">
+                  </a>
+                  <div class="card-body">
+                    <div class="pequeñas-imagenes">
+                      <img src="./assets/img/opciones/zapatilla10/1.png" class="imgPeque" alt="zapatilla10 Opción 1">
+                      <img src="./assets/img/opciones/zapatilla10/2.png" class="imgPeque" alt="zapatilla10 Opción 2">
+                      <img src="./assets/img/opciones/zapatilla10/3.png" class="imgPeque" alt="zapatilla10 Opción 3">
+                      </div>                    
+                    <h6 class="card-subtitle">COMEINIA</h6>
+                    <h5 class="card-title"><b>$89.999,00</b></h5>
+                    <p class="card-text">3 cuotas sin interés de <b>$29.999,67</b><br>Hasta 4 cuotas SIN interés con tarjeta de DÉBITO</p>
+                  </div>
+                </div>
+              </section>
+            </section>
+
+              <!--Seccion Opiniones-->
+              <section class="opiniones">
+                <h3 class="text-center">Testimonios</h3>
+                <div class="container-fluid">
+                  <div class="row align-items-center">
+                      <div class=" col-12 col-md-4 text-center"> 
+                          <div class="shadow-sm cardOpiniones">
+                              <img class="rounded-circle card-img-top mx-auto imgOpiniones" src="./assets/img/testimonio1.png" alt="Usuario1">
+                              <div class="card-body">
+                                <p class="tituloOpiniones">Javier</p>
+                                <p class="subtituloOpiniones">Fanático del Streetwear</p>
+                                <p class="txtOpiniones">¡Una exelente experiencia! <b>Gran variedad de calzado,</b> Siempre encuentro un ambiente moderno y el equipo es conocedor y apasionado por la moda urbana. <b>Sin duda, mi tienda de referencia para encontrar los mejores calzados.</b></p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class=" col-12 col-md-4 text-center"> 
+                        <div class="shadow-sm cardOpiniones">
+                            <img class="rounded-circle card-img-top mx-auto imgOpiniones" src="./assets/img/testimonio2.png" alt="Usuario2">
+                            <div class="card-body">
+                              <p class="tituloOpiniones">Ana</p>
+                              <p class="subtituloOpiniones">Ama de la Elegancia Urbana</p>
+                              <p class="txtOpiniones">La selección de calzado es impresionante, Desde colecciones casuales hasta deportivas, <b>siempre encuentro opciones de mi estilo de vida. Ya sea para una salida informal o para un día activo,</b> esta tienda ofrece la combinación perfecta de estilo y comodidad.</p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class=" col-12 col-md-4 text-center"> 
+                          <div class="shadow-sm cardOpiniones">
+                              <img class="rounded-circle card-img-top mx-auto imgOpiniones" src="./assets/img/testimonio3.png" alt="Usuario3">
+                              <div class="card-body">
+                                <p class="tituloOpiniones">Gabriel</p>
+                                <p class="subtituloOpiniones">Enamorado del Estilo Deportivo</p>
+                                <p class="txtOpiniones">Gran variedad de calzado, Me encanta explorar las colecciones casuales y los modelos deportivos para mis actividades al aire libre. <b>Esta tienda es mi destino imprescindible para encontrar zapatos que reflejen mi estilo de vida activo y sofisticado.</b></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
                 </div>
             </section>
-            <div>
-                <section class="para-ellosyellas">
-                    <section class="tarjeta ellos">
-                        <h2>PARA ELLOS</h2>
-                        <a href="">VER</a>
-    
-                    </section>
-                    <section class="tarjeta ellas">
-                        <h2>PARA ELLAS</h2>
-                        <a href="">VER</a>
-                        
-                    </section>
-                <section>
-            </div>
-            
-                <img src="./assets/img/nosotros.webp" alt="seccionsobrenosotros">
-                <h4>SOBRE NOSOTROS</h4>
-                <p>
-                    <b>¡Bienvenido a "CALZADO URBANO" en Palermo, Buenos Aires!</b>
-                    Con más de tres años liderando la escena del calzado urbano, nos hemos convertido en la opción de tendencia en Palermo y más allá. Formamos parte de las tiendas de calzado urbano más influyentes, destacando por nuestra colaboración con marcas internacionales y exclusivas importaciones.
-
-                    <b>Dirección:</b> Fray Justo Sta. María de Oro 2516, Palermo, Buenos Aires.
-                    <b>Envíos a Todo el País:</b> Llevamos la moda a cada rincón del país, con envíos eficientes y seguros.
-
-                    <b>
-                        Ofrecemos una selección única de calidad y últimas tendencias para que expreses tu autenticidad.
-                    Únete a nuestra comunidad de tendencia y descubre la satisfacción de caminar con estilo. Estamos aquí para guiarte en tu viaje hacia el look perfecto. ¡Te esperamos en "CALZADO URBANO"!
-                    </b> 
-                </p>
-                <img src="./assets/img/8baf925ec57758694081540fce6ca5d2.jpg" alt="nuestratienda">
-            </section>
         </main>
-        <footer class="footer">
-            <a href="#">
-                <img src="./assets/img/logoprincipal.png" alt="logo principal" loading="lazy">
-            </a>
-            <nav class="contenido">
-                <h3>CONTENIDOS</h3>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="./pages/hombres.html">Hombres</a></li>
-                    <li><a href="./pages/mujeres.html">Mujeres</a></li>
-                    <li><a href="./pages/marcas.html">Marcas</a></li>
-                    <li><a href="./pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                </ul>
-                <h3>NECESITAS AYUDA</h3>
-                    <li><a href="./404.html">Inicio</a></li>
+
+
+
+
+        <footer class="footer container-fluid">
+          <div class="contenedorFooter d-flex flex-column flex-md-row justify-content-between">
+              <a class="d-none d-md-block" href="#">
+                  <img class="logoFooter" src="./assets/img/logo.png" alt="Logo de la Calzado Urbano" loading="lazy">
+              </a>
+              <div class="d-flex flex-row divNavg gap-5">
+                <nav class="nav1">
+                    <h4 class="htitulo">CONTENIDOS</h4>
+                    <ul class="listaNav">
+                    <li><a class="linkFooter"  href="#">Inicio</a></li>
+                    <li><a class="linkFooter"  href="./pages/hombres.html">Hombres</a></li>
+                    <li><a class="linkFooter"  href="./pages/mujeres.html">Mujeres</a></li>
+                    <li><a class="linkFooter"  href="./pages/primaveraverano.html">Colecciones</a></li>
+                    <li><a class="linkFooter"  href="./pages/sobrenosotros.html">Nosotros</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav2">
+                    <h4 class="htitulo">NECESITAS AYUDA</h4>
+                    <ul>
+                    
                     <li><a href="./pages/404.html">Tutoriales</a></li>
                     <li><a href="./pages/404.html">Contacto</a></li>
                     <li><a href="./pages/404.html">Atencion al cliente</a></li>
-                </ul>
-            </nav>
-            <section class="casa central">
-                <h4>Casa Central</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d905.5326401730929!2d-65.41183738401854!3d-24.79103371424131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc38315a19ec9%3A0xf256e54691b6c010!2sWoker%20By%20Sporting!5e0!3m2!1ses-419!2sar!4v1707096953172!5m2!1ses-419!2sar" width="100" height="70" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-            <section class="suscribite">
-                <h4>SUSCRIBITE</h4>
-                <form action="./pages/404.html" method="post">
-                    <input type="email" placeholder="ejemplo@ejemplo.com" required id="email" name="email">
-                    <input type="submit" value="Suscribirme">
-                </form>
-            </section>
-            <section>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            </section>
-        </footer>
+                    </ul>
+                </nav>
+              </div>
+              
+              <section class="casaCentral">
+                  <h4>CASA CENTRAL</h4>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.936939532547!2d-58.4038365!3d-34.598238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca918559e3ab%3A0xecd06364de6ba42c!2sPueyrredon%20Y%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1706657573448!5m2!1ses!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </section>
+              <section class="subscribirse">
+                  <h4>SUSCRIBITE</h4>
+                  <form class="d-flex" action="./pages/404.html" method="post">
+                      <input type="email" placeholder="ejemplo@ejemplo.com" required id="email" name="email">
+                      <input class="justify-content-center align-items-center d-inline-flex" type="submit" value="Suscribirme">
+                  </form>
+                  <section class="contacto">
+                      <h4>CONTACTATE CON NOSOTROS</h4>
+                      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                  </section>
+              </section>
+              
+          </div>
+          <hr>
+          <div class="copy">
+              <p>© Copyright 2021 Calzado Urbano - Todos los derechos reservados.
+                  Todos los logos, productos, marcas y nombres aqui utilizados son propiedad registrada.</p>
+          </div>
+      </footer>
+        <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
 
