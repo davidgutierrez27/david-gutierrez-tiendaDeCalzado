@@ -870,7 +870,7 @@ body {
 .bienbenida .card .card-img-overlay .titulo-principal {
   font-family: "Madimi One", sans-serif;
   font-weight: 700;
-  font-size: 7rem;
+  font-size: 10vh;
   color: #EEEEEE;
   width: 100%;
 }
@@ -1152,6 +1152,59 @@ body {
   }
   .footer .contenedorFooter .subscribirse input[type=submit] {
     width: 130px;
+  }
+}
+.main404 {
+  height: 88vh;
+}
+.main404 .bienbenida {
+  height: 100%;
+}
+.main404 .bienbenida .card {
+  height: 100%;
+}
+.main404 .bienbenida .card .card-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(45%);
+}
+.main404 .bienbenida .card .card-img-overlay {
+  color: #EEEEEE;
+  width: 100%;
+  padding-left: 30vh;
+  padding-right: 30vh;
+  font-family: "Madimi One", sans-serif;
+}
+.main404 .bienbenida .card .card-img-overlay .titulo-principal {
+  font-size: 4rem;
+}
+.main404 .bienbenida .card .card-img-overlay .titulo-principal2 {
+  font-size: 10rem;
+}
+.main404 .bienbenida .card .card-img-overlay .subtitulo {
+  align-items: center;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #DFDBD8;
+  font-size: 1.5rem;
+}
+.main404 .bienbenida .card .card-img-overlay .subtitulo span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .main404 .bienbenida .card .card-img-overlay {
+    padding: 0;
+  }
+  .main404 .bienbenida .card .card-img-overlay .titulo-principal {
+    font-size: 2rem;
+  }
+  .main404 .bienbenida .card .card-img-overlay .titulo-principal2 {
+    font-size: 5rem;
+  }
+  .main404 .bienbenida .card .card-img-overlay .subtitulo {
+    padding: 0px 24px;
+    display: block;
+    font-size: 1rem;
   }
 }
 
