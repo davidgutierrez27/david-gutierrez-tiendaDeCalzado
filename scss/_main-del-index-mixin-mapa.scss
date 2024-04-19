@@ -42,13 +42,11 @@
                     font-weight: 400;
                     border-radius: $borde-radio-btn;
                     transition: all .5s ease;
+                    padding: 15px 20px;
+                    border: none;
+                    position: relative;
+                    z-index: 1;
 
-                        padding: 15px 20px;
-                        border: none;
-                        position: relative;
-                        z-index: 1;
-                      
-                      
                       &::after,
                       &::before {
                         content: '';
@@ -112,17 +110,74 @@
                 
                 @media screen and (max-width: 768px){
                     .btn-primary1{
+                        background: $color-btnprincipal1;
                         margin-top: 30px;
                         margin-bottom: 30px;
+                        &::before,
+                        &::after {
+                            display: none;
+                        }
+                        &:hover::before {
+                            box-shadow: none;
+                        }
+
+                        &:hover::after {
+                            border-radius: 0;
+                            transform: none;
+                            width: auto;
+                            height: auto;
+                        }
+
+                        &:active::after {
+                            transform: none;
+                        }
                     }
                     .btn-primary2{
+                        background: $color-btnprincipal2;
                         margin-top: 30px;
                         margin-bottom: 30px;
+                        &::before,
+                        &::after {
+                            display: none;
+                        }
+                        &:hover::before {
+                            box-shadow: none;
+                        }
+
+                        &:hover::after {
+                            border-radius: 0;
+                            transform: none;
+                            width: auto;
+                            height: auto;
+                        }
+
+                        &:active::after {
+                            transform: none;
+                        }
                     }
                     .btn-primary3{
+                        background: $color-btnprincipal3;
                         margin-top: 30px;
                         margin-bottom: 30px;
-                    }  
+                        &::before,
+                        &::after {
+                            display: none;
+                        }
+                        &:hover::before {
+                            box-shadow: none;
+                        }
+
+                        &:hover::after {
+                            border-radius: 0;
+                            transform: none;
+                            width: auto;
+                            height: auto;
+                        }
+
+                        &:active::after {
+                            transform: none;
+                        }
+                    } 
                 }
                 
                 @media screen and (max-width: 768px){

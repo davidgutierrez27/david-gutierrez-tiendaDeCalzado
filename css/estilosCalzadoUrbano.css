@@ -277,16 +277,64 @@ body {
 }
 @media screen and (max-width: 768px) {
   .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1 {
+    background: #c70014;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1::before, .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1::after {
+    display: none;
+  }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1:hover::before {
+    box-shadow: none;
+  }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1:hover::after {
+    border-radius: 0;
+    transform: none;
+    width: auto;
+    height: auto;
+  }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1:active::after {
+    transform: none;
   }
   .mainIndex .carousel .carousel-inner .carousel-item .btn-primary2 {
+    background: #B9355A;
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary2::before, .mainIndex .carousel .carousel-inner .carousel-item .btn-primary2::after {
+    display: none;
+  }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary2:hover::before {
+    box-shadow: none;
+  }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary2:hover::after {
+    border-radius: 0;
+    transform: none;
+    width: auto;
+    height: auto;
+  }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary2:active::after {
+    transform: none;
+  }
   .mainIndex .carousel .carousel-inner .carousel-item .btn-primary3 {
+    background: #ff1f6d;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary3::before, .mainIndex .carousel .carousel-inner .carousel-item .btn-primary3::after {
+    display: none;
+  }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary3:hover::before {
+    box-shadow: none;
+  }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary3:hover::after {
+    border-radius: 0;
+    transform: none;
+    width: auto;
+    height: auto;
+  }
+  .mainIndex .carousel .carousel-inner .carousel-item .btn-primary3:active::after {
+    transform: none;
   }
 }
 @media screen and (max-width: 768px) {
