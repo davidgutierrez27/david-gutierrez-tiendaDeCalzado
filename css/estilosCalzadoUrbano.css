@@ -121,51 +121,159 @@ body {
 }
 .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1 {
   color: #EEEEEE;
-  background-color: #c3000d;
   width: 300px;
-  padding: 10px 20px;
   margin-top: 50px;
   font-size: 2rem;
   font-weight: 400;
   border-radius: 0.9rem;
   transition: all 0.5s ease;
+  padding: 15px 20px;
+  border: none;
+  position: relative;
+  z-index: 1;
 }
-.mainIndex .carousel .carousel-inner .carousel-item .btn-primary1:hover {
-  transform: scale(1.1);
-  color: #EEEEEE;
-  background-color: #ff0000;
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary1::after, .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary1::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #c70014;
+  border-radius: 10px;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary1::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: rgba(223, 216, 216, 0.2784313725);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary1:hover::before {
+  box-shadow: 0 0 5px rgba(199, 0, 20, 0.3411764706), 0 0 25px rgba(199, 0, 20, 0.3411764706), 0 0 50px rgba(199, 0, 20, 0.3411764706), 0 0 100px rgba(199, 0, 20, 0.3411764706);
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary1:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary1:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
 }
 .mainIndex .carousel .carousel-inner .carousel-item .btn-primary2 {
   color: #EEEEEE;
-  background-color: #c3000d;
   width: 300px;
-  padding: 10px 20px;
   margin-top: 50px;
   font-size: 2rem;
   font-weight: 400;
   border-radius: 0.9rem;
   transition: all 0.5s ease;
+  padding: 15px 20px;
+  border: none;
+  position: relative;
+  z-index: 1;
 }
-.mainIndex .carousel .carousel-inner .carousel-item .btn-primary2:hover {
-  transform: scale(1.1);
-  color: #EEEEEE;
-  background-color: #ff0000;
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary2::after, .mainIndex .carousel .carousel-inner .carousel-item .btn-primary2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary2::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #B9355A;
+  border-radius: 10px;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary2::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: rgba(223, 216, 216, 0.2784313725);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary2:hover::before {
+  box-shadow: 0 0 5px rgba(185, 53, 90, 0.3411764706), 0 0 25px rgba(185, 53, 90, 0.3411764706), 0 0 50px rgba(185, 53, 90, 0.3411764706), 0 0 100px rgba(185, 53, 90, 0.3411764706);
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary2:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary2:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
 }
 .mainIndex .carousel .carousel-inner .carousel-item .btn-primary3 {
   color: #EEEEEE;
-  background-color: #c3000d;
   width: 300px;
-  padding: 10px 20px;
   margin-top: 50px;
   font-size: 2rem;
   font-weight: 400;
   border-radius: 0.9rem;
   transition: all 0.5s ease;
+  padding: 15px 20px;
+  border: none;
+  position: relative;
+  z-index: 1;
 }
-.mainIndex .carousel .carousel-inner .carousel-item .btn-primary3:hover {
-  transform: scale(1.1);
-  color: #EEEEEE;
-  background-color: #ff0000;
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary3::after, .mainIndex .carousel .carousel-inner .carousel-item .btn-primary3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary3::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #ff1f6d;
+  border-radius: 10px;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary3::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: rgba(223, 216, 216, 0.2784313725);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary3:hover::before {
+  box-shadow: 0 0 5px rgba(255, 31, 109, 0.5294117647), 0 0 25px rgba(255, 31, 109, 0.5294117647), 0 0 50px rgba(255, 31, 109, 0.5294117647), 0 0 100px rgba(255, 31, 109, 0.5294117647);
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary3:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+.mainIndex .carousel .carousel-inner .carousel-item .btn-primary3:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
 }
 @media screen and (max-width: 768px) {
   .mainIndex .carousel .carousel-inner .carousel-item .btn-primary1 {
@@ -1118,7 +1226,7 @@ body {
 }
 .footer .contenedorFooter .subscribirse form input[type=submit] {
   height: 100%;
-  background-color: #c3000d;
+  background-color: #c70014;
   color: #EEEEEE;
   padding: 12px 20px;
   font-size: 1rem;
@@ -1128,7 +1236,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.3px;
   font-weight: 400;
-  border: 1px solid #c3000d;
+  border: 1px solid #c70014;
   border-radius: 0px 10px 10px 0px;
 }
 .footer .contenedorFooter .subscribirse .logoFooter {
