@@ -34,17 +34,27 @@ body {
 .headerIndex .navbar-dark.headerIndex__bgNav .logo {
   top: 17px;
   left: 123px;
-  width: 25vh;
+  width: 20vh;
+  margin-top: 11px;
+  margin-bottom: 11px;
   margin-left: 12vh;
-  margin-right: 150px;
 }
 @media screen and (max-width: 768px) {
   .headerIndex .navbar-dark.headerIndex__bgNav .logo {
-    margin-left: 90px;
+    width: 25vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
 .headerIndex .navbar-dark.headerIndex__bgNav .botonesIconos {
   margin-right: 10vh;
+}
+@media screen and (max-width: 768px) {
+  .headerIndex .navbar-dark.headerIndex__bgNav .botonesIconos {
+    display: none;
+  }
 }
 .headerIndex .navbar-dark.headerIndex__bgNav .navbar-nav .dropdown-menu {
   border: 0px;

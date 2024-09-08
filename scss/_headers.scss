@@ -12,17 +12,27 @@
         .logo{
             top: 17px;
             left: 123px;
-            width: 25vh;
+            width: 20vh;
+            margin-top: 11px;
+            margin-bottom: 11px;
             margin-left: 12vh;
-            margin-right: $pix100;
             }
         @media screen and (max-width: 768px){
             .logo{
-                margin-left: 90px;
+                width: 25vh;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 120px;
+                margin-right: 120px;
                 }
         }
         .botonesIconos{
             margin-right: 10vh;
+        }
+        @media screen and (max-width: 768px){
+            .botonesIconos{
+                display: none;
+                }
         }
         .navbar-nav{
             .dropdown-menu{
